@@ -1,29 +1,76 @@
 import Vue from 'vue'
-import VueRouter, { RouteConfig } from 'vue-router'
+import VueRouter, {Route, RouteConfig} from 'vue-router'
 import Home from '../views/Home.vue'
+import ProjectView from "@/views/ProjectView.vue"
+import PortfolioOverview from "@/views/PortfolioOverview.vue"
+import PhotographyOverview from "@/views/PhotographyOverview.vue"
+import ContactView from "@/views/ContactView.vue"
+
+function GetPageTitle(targetPage: string) : string {
+    if (!targetPage) {
+        return "Casper van Battum"
+    }
+
+    return `Casper van Battum - ${targetPage}`
+}
 
 Vue.use(VueRouter)
 
+// noinspection JSUnusedGlobalSymbols
 const routes: Array<RouteConfig> = [
-  {
-    path: '/',
-    name: 'Home',
-    component: Home
-  },
-  {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
+    {
+        path: '/',
+        name: 'home',
+        component: Home,
+        meta: {
+            pageTitle: ""
+        }
+    },
+    {
+        path: '/projects',
+        name: 'project-overview',
+        component: PortfolioOverview,
+        meta: {
+            pageTitle: "Projects"
+        }
+    },
+    {
+        path: '/projects/:projectSlug',
+        name: 'project-view',
+        component: ProjectView,
+        props: true,
+        beforeEnter(to, from, next) {
+            document.title = GetPageTitle(to.params.projectName)
+            next()
+        }
+    },
+    {
+        path: '/photos',
+        name: 'photos',
+        component: PhotographyOverview,
+        meta: {
+            pageTitle: "Photography"
+        }
+    },
+    {
+        path: '/contact',
+        name: 'contact',
+        component: ContactView,
+        meta: {
+            pageTitle: "Contact"
+        }
+    }
 ]
 
 const router = new VueRouter({
-  mode: 'history',
-  base: process.env.BASE_URL,
-  routes
+    mode: 'history',
+    base: process.env.BASE_URL,
+    routes
+})
+
+router.beforeEach((to, from, next) => {
+    document.title = GetPageTitle(to.meta.pageTitle);
+    next();
 })
 
 export default router

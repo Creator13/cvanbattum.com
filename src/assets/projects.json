@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "name": "Mimont",
+      "slug": "mimont",
+      "card": "url://todo",
+      "splash": "url://todo",
+      "description": "Mimont is a fun game lorem ispsum blablablala",
+      "images": [
+        "url://todo",
+        "url://todo",
+        "url://todo"
+      ]
+    },
+    {
+      "name": "not mimont",
+      "slug": "not-mimont",
+      "card": "url://todo",
+      "splash": "url://todo",
+      "description": "Mimont is a fun game lorem ispsum blablablala",
+      "images": [
+        "url://todo",
+        "url://todo",
+        "url://todo"
+      ]
+    }
+  ]
+}
