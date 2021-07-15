@@ -3,10 +3,11 @@
     <router-link :to="{name: 'project-view', params: {
       projectName: projectObject.name, projectSlug: projectObject.slug, project: projectObject}
     }">
+      <img :src="projectObject.thumb" :alt="projectObject.slug"/>
       {{ projectObject.name }}
     </router-link>
   </div>
-</template>
+</template>s
 
 <script lang="ts">
 import Vue from 'vue'
@@ -18,5 +19,11 @@ export default Vue.extend({
 </script>
 
 <style scoped lang="scss">
+a {
+ width: 100%;
+}
 
+a img {
+  width: 100%;
+}
 </style>

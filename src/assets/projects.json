@@ -1,9 +1,21 @@
 {
   "projects": [
     {
+      "name": "Connect for Coffee",
+      "slug": "connect-for-coffee",
+      "thumb": "project_content/connect-for-coffee/thumb.png",
+      "splash": "url://todo",
+      "description": "CFC is a fun game lorem ispsum blablablala",
+      "images": [
+        "url://todo",
+        "url://todo",
+        "url://todo"
+      ]
+    },
+    {
       "name": "Mimont",
       "slug": "mimont",
-      "card": "url://todo",
+      "thumb": "project_content/mimont/thumb.png",
       "splash": "url://todo",
       "description": "Mimont is a fun game lorem ispsum blablablala",
       "images": [
@@ -15,9 +27,21 @@
     {
       "name": "not mimont",
       "slug": "not-mimont",
-      "card": "url://todo",
+      "thumb": "project_content/thumbX.png",
       "splash": "url://todo",
       "description": "Mimont is a fun game lorem ispsum blablablala",
+      "images": [
+        "url://todo",
+        "url://todo",
+        "url://todo"
+      ]
+    },
+    {
+      "name": "Fluffy",
+      "slug": "fluffy",
+      "thumb": "project_content/fluffy/thumb.png",
+      "splash": "url://todo",
+      "description": "CFC is a fun game lorem ispsum blablablala",
       "images": [
         "url://todo",
         "url://todo",

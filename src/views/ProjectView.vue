@@ -1,7 +1,7 @@
 <template>
   <div class="project-view">
     <header class="project-breadcrumbs">
-      <a @click="$router.go(-1)">&#60; projects</a>
+      <a @click="$router.go(-1)" class="breadcrumb-link">&#60; projects</a>
     </header>
     <p>Here come dat project: {{ project.name }}</p>
     <p>{{project.description}}</p>
