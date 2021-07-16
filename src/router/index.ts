@@ -5,8 +5,10 @@ import ProjectView from "@/views/ProjectView.vue"
 import PortfolioOverview from "@/views/PortfolioOverview.vue"
 import PhotographyOverview from "@/views/PhotographyOverview.vue"
 import ContactView from "@/views/ContactView.vue"
+import NotFoundView from "@/views/NotFoundView.vue";
+import {projectExists} from "@/model/portfolioModel";
 
-function GetPageTitle(targetPage: string) : string {
+function getPageTitle(targetPage: string) : string {
     if (!targetPage) {
         return "Casper van Battum"
     }
@@ -40,7 +42,12 @@ const routes: Array<RouteConfig> = [
         component: ProjectView,
         props: true,
         beforeEnter(to, from, next) {
-            document.title = GetPageTitle(to.params.projectName)
+            if (!projectExists(to.params.projectSlug)) {
+                router.replace({name: "not-found"}).then(() => next());
+                return;
+            }
+
+            document.title = getPageTitle(to.params.projectName)
             next()
         }
     },
@@ -59,6 +66,18 @@ const routes: Array<RouteConfig> = [
         meta: {
             pageTitle: "Contact"
         }
+    },
+    {
+        path: "/404",
+        name: "not-found",
+        component: NotFoundView,
+        meta: {
+            pageTitle: "404"
+        }
+    },
+    {
+        path: "*",
+        redirect: "404"
     }
 ]
 
@@ -69,7 +88,7 @@ const router = new VueRouter({
 })
 
 router.beforeEach((to, from, next) => {
-    document.title = GetPageTitle(to.meta.pageTitle);
+    document.title = getPageTitle(to.meta.pageTitle);
     next();
 })
 

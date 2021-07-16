@@ -7,7 +7,7 @@
 </template>
 
 <script lang="ts">
-import {Component, Vue} from 'vue-property-decorator';
+import Vue from 'vue';
 import PortfolioItem from "@/components/PortfolioItem.vue";
 import projectFile from "@/assets/projects.json";
 import {Project} from "@/types/project";
@@ -15,7 +15,7 @@ import VueMasonry from "vue-masonry-css";
 
 Vue.use(VueMasonry);
 
-@Component({
+export default Vue.extend({
   components: {PortfolioItem},
   computed: {
     projects(): Project[] {
@@ -23,8 +23,6 @@ Vue.use(VueMasonry);
     }
   }
 })
-export default class PortfolioOverview extends Vue {
-}
 </script>
 
 <style scoped lang="scss">

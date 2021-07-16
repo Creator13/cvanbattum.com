@@ -139,6 +139,7 @@ nav a.router-link-exact-active:hover {
 
 .breadcrumb-link {
   cursor: pointer;
+  text-decoration: none;
 }
 
 .fade-enter {

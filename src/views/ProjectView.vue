@@ -1,33 +1,35 @@
 <template>
   <div class="project-view">
     <header class="project-breadcrumbs">
-      <a @click="$router.go(-1)" class="breadcrumb-link">&#60; projects</a>
+      <router-link to="/projects" class="breadcrumb-link">&#60; projects</router-link>
     </header>
     <p>Here come dat project: {{ project.name }}</p>
-    <p>{{project.description}}</p>
-    <p>{{project.description}}</p>
-    <p>{{project.description}}</p>
-    <p>{{project.description}}</p>
-    <p>{{project.description}}</p>
-    <p>{{project.description}}</p>
-    <p>{{project.description}}</p>
-    <p>{{project.description}}</p>
-    <p>{{project.description}}</p>
-    <p>{{project.description}}</p>
-    <p>{{project.description}}</p>
+    <div v-html="renderedDescription"></div>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
+import MarkdownIt from "markdown-it";
 import {Project} from "@/types/project";
+import {loadProject} from "@/model/portfolioModel";
+
+const md = new MarkdownIt();
 
 export default Vue.extend({
   name: 'ProjectView',
   props: {
-    project: {
-      type: Object as () => Project,
+    projectSlug: {
+      type: Object as () => string,
       required: true
+    }
+  },
+  computed: {
+    renderedDescription(): string {
+      return md.render(this.project.description);
+    },
+    project(): Project {
+      return loadProject(this.projectSlug);
     }
   }
 })

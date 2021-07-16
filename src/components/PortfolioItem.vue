@@ -1,8 +1,6 @@
 <template>
   <div>
-    <router-link :to="{name: 'project-view', params: {
-      projectName: projectObject.name, projectSlug: projectObject.slug, project: projectObject}
-    }">
+    <router-link :to="{name: 'project-view', params: {projectSlug: projectObject.slug}}">
       <img :src="projectObject.thumb" :alt="projectObject.slug"/>
       {{ projectObject.name }}
     </router-link>
