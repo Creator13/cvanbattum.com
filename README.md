@@ -1,24 +1,5 @@
-# portfolio-site
+# Casper van Battum - Portfolio
 
-## Project setup
-```
-npm install
-```
+Hi! Welcome to the source code of my portfolio website.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### [Visit the website here!](cvanbattum.com)
