@@ -27,19 +27,23 @@ export default Vue.extend({
 </script>
 
 <style scoped lang="scss">
-@import "./../css/animations";
-@import "./../css/colors";
-@import "./../css/fonts.css";
+@import "../css/effects";
+@import "../css/colors";
+@import "../css/fonts";
 
 img {
   width: 100%;
 }
 
+a {
+  padding: 0;
+}
+
 .card {
   display: block;
-  border-radius: 8px;
+  border-radius: $border-radius;
   overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  box-shadow: $box-shadow;
 }
 
 .card {
@@ -52,7 +56,7 @@ img {
 
 .card .card-overlay::after {
   content: '';
-  background: rgba($color-accent-secondary, 0.8);
+  background: rgba($accent-main, 1);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -61,7 +65,7 @@ img {
   bottom: 0;
   right: 0;
   opacity: 0;
-  transition: $animate;
+  transition: $transition;
 }
 
 .card:hover .card-overlay::after {
@@ -74,6 +78,7 @@ img {
 }
 
 .card-text {
+  color: $text-light;
   position: absolute;
   text-align: center;
   box-sizing: border-box;
@@ -83,7 +88,7 @@ img {
   left: 50%;
   opacity: 0;
   transform: translate(-50%, -50%);
-  transition: $animate;
+  transition: $transition;
 }
 
 .card:hover .card-text {
@@ -93,7 +98,6 @@ img {
 }
 
 .card-text h3 {
-  color: $color-background;
   font-family: "Adelle", sans-serif;
   font-size: 1.3em;
   font-weight: 700;
@@ -103,7 +107,6 @@ img {
 }
 
 .card-text p {
-  color: $color-background;
   line-height: 1.5em;
 }
 

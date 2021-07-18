@@ -1,0 +1,23 @@
+@import "colors";
+@import "effects";
+
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  text-decoration: none;
+  box-shadow: $box-shadow;
+  border-radius: $border-radius;
+  font-weight: lighter;
+  padding: 10px 12px;
+  letter-spacing: .025em;
+  background-color: $accent-secondary;
+  color: $background;
+  transition: $transition;
+  transition-property: color, background-color;
+  transition-duration: 50ms;
+
+  &:hover {
+    color: $accent-secondary;
+    background-color: $accent-main;
+  }
+}

@@ -26,36 +26,14 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-@import "./css/normalize.css";
-@import "./css/fonts.css";
-@import "./css/colors.scss";
-@import "./css/animations.scss";
-
-::selection {
-  background-color: $color-accent-main;
-}
-
-html {
-  background-color: $color-background;
-}
-
-a {
-  color: $color-text-light;
-}
-
-a:visited {
-  color: $color-text-light;
-}
-
-a:hover {
-  color: $color-accent-main;
-}
+@import "css/effects";
+@import "css/colors";
+@import "css/base";
 
 #app {
-  font-family: 'Noto Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: $color-text-light;
+  color: $text-light;
   width: 62.5%;
   margin: 0 auto;
 }
@@ -64,7 +42,7 @@ header h1 {
   font-family: "Adelle", sans-serif;
   font-weight: 300;
   font-size: 3.5em;
-  color: $color-text-dark;
+  color: $text-dark;
 }
 
 .page-container {
@@ -90,7 +68,7 @@ nav a {
   padding: .5em;
   margin: .25em 10px .25em 0;
 
-  transition: $animate;
+  transition: $transition;
   position: relative;
 
   &:before,
@@ -101,9 +79,9 @@ nav a {
     width: 0;
     height: 2px;
     margin: 5px 0 0;
-    transition: $animate;
+    transition: $transition;
     opacity: 0;
-    background-color: $color-accent-main;
+    background-color: $accent-main;
   }
 
   &.slide-ltr {
@@ -112,10 +90,14 @@ nav a {
       left: 0;
     }
   }
+
+  &:hover {
+    background: none;
+  }
 }
 
 .slide-ltr:hover {;
-  color: $color-accent-secondary;
+  color: $accent-secondary;
 
   &:before,
   &:after {
@@ -125,14 +107,14 @@ nav a {
 }
 
 nav a.router-link-exact-active {
-  color: $color-accent-secondary;
+  color: $accent-secondary;
 }
 
 nav a.router-link-exact-active:hover {
-  color: $color-accent-main;
+  color: $accent-main;
 
   &.slide-ltr {
-    color: $color-accent-secondary;
+    color: $accent-secondary;
   }
 }
 
@@ -150,12 +132,12 @@ nav a.router-link-exact-active:hover {
 }
 
 .fade-enter-active {
-  transition: $animate;
+  transition: $transition;
   transition-duration: 100ms;
 }
 
 .fade-leave-active {
-  transition: $animate;
+  transition: $transition;
   transition-duration: 100ms;
   opacity: 0;
 }

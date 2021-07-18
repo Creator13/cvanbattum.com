@@ -1,0 +1,136 @@
+@import "colors";
+@import "fonts";
+@import "effects";
+@import "components";
+
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+@import "./node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "./node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+
+.markdown {
+  font-size: 11pt;
+
+  h1, h2, h3 {
+    font-family: "Adelle", sans-serif;
+    margin: 35px 0 15px;
+
+    &:first-child {
+      margin-top: 15px;
+    }
+  }
+
+  h1, h2 {
+    background-color: $text-light;
+    color: $background;
+    padding: 10px 10px 10px 15px;
+    font-weight: normal;
+  }
+
+  h3 {
+    font-weight: bold;
+    font-size: 1.25em;
+  }
+
+  p, li {
+    margin: 0;
+  }
+
+  p {
+    margin-top: .65em;
+  }
+
+  li {
+    margin: .35em 0;
+  }
+
+  blockquote {
+    box-sizing: border-box;
+    border-left: 3px solid $accent-main;
+    padding: .5em 0 .5em 1em
+  }
+
+  pre, code {
+    font-family: "JetBrains Mono", monospace;
+  }
+
+  pre {
+    background-color: #eaeaea;
+    padding: 1em 1.5em;
+    border-radius: $border-radius;
+    font-size: 0.938em;
+  }
+
+  code {
+
+  }
+
+  // Temporary table styling
+  table {
+    color: #333;
+    border: 1px solid grey;
+    font-size: 12pt;
+    border-collapse: collapse;
+  }
+
+  table thead th,
+  table tfoot th {
+    color: #777;
+    background: rgba(0, 0, 0, .1);
+  }
+
+  table caption {
+    padding: .5em;
+  }
+
+  table th,
+  table td {
+    padding: .5em;
+    border: 1px solid lightgrey;
+  }
+
+  img {
+    width: 50%;
+    display: block;
+    margin: 3em auto;
+    text-align: center;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+
+    &.no-shadow {
+      box-shadow: none;
+    }
+  }
+
+  .external-link {
+    @extend .button;
+
+    padding: 1em;
+    font-size: 1.25em;
+
+    &:after {
+      content: '\00A0\00A0\f35d';
+      font-family: "Font Awesome 5 Free", serif;
+      font-size: .85em;
+      color: rgba($background, .85);
+      transition: $transition;
+      transition-property: color;
+      transition-duration: 50ms;
+    }
+
+    &:hover {
+      &:after {
+        color: rgba($accent-secondary, .85);
+      }
+    }
+  }
+
+  .link-paragraph {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+
+    .external-link {
+      margin: 0 1em;
+    }
+  }
+}
