@@ -9,7 +9,7 @@
 <script lang="ts">
 import Vue from 'vue';
 import PortfolioItem from "@/components/PortfolioItem.vue";
-import projectFile from "@/assets/projects.json";
+import {loadAllProjects} from "@/model/portfolioModel";
 import {Project} from "@/types/project";
 import VueMasonry from "vue-masonry-css";
 
@@ -19,19 +19,14 @@ export default Vue.extend({
   components: {PortfolioItem},
   computed: {
     projects(): Project[] {
-      return projectFile.projects;
+      return loadAllProjects();
     }
   }
 })
 </script>
 
 <style scoped lang="scss">
-//.overview {
-//  float: left;
-//}
-//
-//.portfolio-item {
-//  width: 30%;
-//  margin-right: calc((100% / 3 - 30%));
-//}
+.portfolio-item {
+  margin-bottom: 30px;
+}
 </style>

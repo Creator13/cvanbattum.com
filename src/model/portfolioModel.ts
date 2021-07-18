@@ -1,22 +1,20 @@
 import {Project} from "@/types/project";
-import projectFile from "@/assets/projects.json";
+import projects from "@/assets/projects";
 
-const projects: Project[] = JSON.parse(JSON.stringify(projectFile.projects));
-
-export function loadProject(slug: string) : Project {
+export function loadProject(slug: string): Project {
     const project = projects.find(project => project.slug === slug);
 
     if (project === undefined) {
-        return <Project> {};
+        return <Project>{};
     }
 
     return project;
 }
 
-export function projectExists(slug: string) : boolean {
+export function projectExists(slug: string): boolean {
     return projects.some(project => project.slug === slug);
 }
 
-export function all() : Project[] {
+export function loadAllProjects(): Project[] {
     return projects;
 }

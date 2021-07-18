@@ -29,6 +29,11 @@ export default Vue.extend({
 @import "./css/normalize.css";
 @import "./css/fonts.css";
 @import "./css/colors.scss";
+@import "./css/animations.scss";
+
+::selection {
+  background-color: $color-accent-main;
+}
 
 html {
   background-color: $color-background;
@@ -58,7 +63,7 @@ a:hover {
 header h1 {
   font-family: "Adelle", sans-serif;
   font-weight: 300;
-  font-size: 3em;
+  font-size: 3.5em;
   color: $color-text-dark;
 }
 
@@ -76,8 +81,6 @@ nav {
 }
 
 // Underline animation stolen from https://codepen.io/mxttsco/pen/KgodYm
-$animate: all .2s cubic-bezier(1,.25,0,.75) 0s;
-
 nav a {
   font-family: "Adelle", sans-serif;
   font-weight: 700;
@@ -148,16 +151,16 @@ nav a.router-link-exact-active:hover {
 
 .fade-enter-active {
   transition: $animate;
+  transition-duration: 100ms;
 }
-
-.fade-leave {}
 
 .fade-leave-active {
   transition: $animate;
+  transition-duration: 100ms;
   opacity: 0;
 }
 
-@media screen and (max-width: 1450px){
+@media screen and (max-width: 1450px) {
   #app {
     width: calc(100% - 2 * 50px);
     margin: 0 50px;
