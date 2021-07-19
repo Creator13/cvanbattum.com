@@ -3,7 +3,8 @@ import markdownItAttrs from "markdown-it-attrs";
 
 const md = markdownIt("default", {
     linkify: true,
-    typographer: true
+    typographer: true,
+    html: true
 });
 
 md.use(markdownItAttrs);

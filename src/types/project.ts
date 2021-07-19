@@ -6,4 +6,6 @@ export interface Project {
     thumbnailUri: string;
     splash: string;
     year: number;
+    tags: string[];
+    techs: string[]
 }

@@ -8,6 +8,13 @@
       </router-link>
       <div class="project-title">
         <h1>{{ project.name }}</h1>
+        <h5>{{ project.year }} |
+          <span>
+            <template v-for="(tech, index) in project.techs">
+              {{ tech }}<template v-if="index < project.techs.length - 1"> &bullet; </template>
+            </template>
+          </span>
+        </h5>
       </div>
     </header>
     <div class="markdown" v-html="renderedContent"></div>
@@ -58,16 +65,29 @@ export default Vue.extend({
 .project-title {
   position: absolute;
   bottom: 3em;
-  background-color: #274B59;
+  background-color: $text-light;
   padding: .75em 10%;
 
-  h1 {
+  h1, h5 {
     margin: 0;
     font-family: 'Adelle', sans-serif;
-    color: #f2f2f2;
-    font-size: 3em;
     font-weight: 500;
+  }
+
+  h1 {
+    color: $background;
+    font-size: 3em;
     text-transform: uppercase
+  }
+
+  h5 {
+    color: darken($background, 15);
+    font-size: 1.5em;
+
+    span {
+      color: darken($background, 25);
+      font-size: .8em;
+    }
   }
 }
 
@@ -102,7 +122,6 @@ $inner-margin: 40px;
   font-size: 1.5em;
   line-height: 1.5em;
   width: 90%;
-  text-align: justify;
   display: block;
   box-sizing: border-box;
   margin: 0 auto;
@@ -110,6 +129,33 @@ $inner-margin: 40px;
 
   p {
     margin: 0;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .project-title {
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+
+    h1 {
+      padding: 0;
+    }
+  }
+
+  .markdown {
+    $width: .95;
+
+    img {
+      width: percentage($width);
+    }
+
+    .video-wrapper {
+      width: percentage($width);
+      padding-bottom: 56.2% * $width;
+    }
   }
 }
 </style>
