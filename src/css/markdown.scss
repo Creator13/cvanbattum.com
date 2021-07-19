@@ -31,16 +31,14 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
     font-size: 1.25em;
   }
 
-  p, li {
-    margin: 0;
-  }
-
   p {
     margin-top: .65em;
+    line-height: 1.2em;
   }
 
   li {
     margin: .35em 0;
+    line-height: 1.1em;
   }
 
   blockquote {
@@ -105,7 +103,7 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
     @extend .button;
 
     padding: 1em;
-    font-size: 1.25em;
+    font-size: 1.15em;
 
     &:after {
       content: '\00A0\00A0\f35d';
@@ -127,10 +125,17 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
   .link-paragraph {
     display: flex;
     justify-content: center;
-    margin: 10px 0;
+    margin: 3em 0;
 
     .external-link {
       margin: 0 1em;
     }
+  }
+
+  .intro {
+    font-size: 1.5em;
+    line-height: 1.3em;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }

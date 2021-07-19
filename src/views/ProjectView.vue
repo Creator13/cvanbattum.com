@@ -1,7 +1,10 @@
 <template>
   <div class="project-view">
     <header class="project-breadcrumbs">
-      <router-link to="/projects" class="breadcrumb-link button"><font-awesome-icon :icon="['far', 'arrow-alt-circle-left']"/> Back to projects</router-link>
+      <router-link to="/projects" class="breadcrumb-link button">
+        <font-awesome-icon :icon="['far', 'arrow-alt-circle-left']"/>
+        Back to projects
+      </router-link>
     </header>
     <div class="markdown" v-html="renderedDescription"></div>
   </div>
@@ -42,4 +45,15 @@ export default Vue.extend({
 
 <style lang="scss">
 @import "../css/markdown";
+
+$inner-margin: 25px;
+
+.markdown {
+  margin: auto $inner-margin;
+
+  h1, h2, h3 {
+    margin-left: -$inner-margin;
+    margin-right: -$inner-margin;
+  }
+}
 </style>
