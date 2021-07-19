@@ -8,7 +8,7 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 @import "./node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
 
 .markdown {
-  font-size: 11pt;
+  font-size: 11.5pt;
 
   h1, h2, h3 {
     font-family: "Adelle", sans-serif;
@@ -33,12 +33,12 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 
   p {
     margin-top: .65em;
-    line-height: 1.2em;
+    line-height: 1.5em;
   }
 
   li {
     margin: .35em 0;
-    line-height: 1.1em;
+    line-height: 1.3em;
   }
 
   blockquote {
@@ -52,14 +52,19 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
   }
 
   pre {
-    background-color: #eaeaea;
+    background-color: #e6e6e6;
     padding: 1em 1.5em;
     border-radius: $border-radius;
     font-size: 0.938em;
   }
 
-  code {
+  :not(pre) code {
+    background-color: #e6e6e6;
 
+    &:before,
+    &:after {
+      content: '\00a0';
+    }
   }
 
   // Temporary table styling
@@ -87,9 +92,9 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
   }
 
   img {
-    width: 50%;
+    width: 60%;
     display: block;
-    margin: 3em auto;
+    margin: 2em auto;
     text-align: center;
     border-radius: $border-radius;
     box-shadow: $box-shadow;
@@ -130,12 +135,5 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
     .external-link {
       margin: 0 1em;
     }
-  }
-
-  .intro {
-    font-size: 1.5em;
-    line-height: 1.3em;
-    margin-left: 20px;
-    margin-right: 20px;
   }
 }

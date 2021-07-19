@@ -1,7 +1,7 @@
 export interface Project {
     name: string;
     slug: string;
-    description: string;
+    content: string;
     shortDescription: string;
     thumbnailUri: string;
     splash: string;

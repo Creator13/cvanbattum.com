@@ -11,9 +11,6 @@ import Vue from 'vue';
 import PortfolioItem from "@/components/PortfolioItem.vue";
 import {loadAllProjects} from "@/model/portfolioModel";
 import {Project} from "@/types/project";
-import VueMasonry from "vue-masonry-css";
-
-Vue.use(VueMasonry);
 
 export default Vue.extend({
   components: {PortfolioItem},

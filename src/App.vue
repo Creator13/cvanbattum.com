@@ -14,6 +14,9 @@
         <router-view id="router-view"/>
       </transition>
     </div>
+    <footer>
+      © Casper van Battum 2021 &#x2022; <a href="https://github.com/Creator13/cvanbattum.com" target="_blank">View website source code</a>
+    </footer>
   </div>
 </template>
 
@@ -56,6 +59,11 @@ nav {
   text-align: left;
   margin-right: 20px;
   border-right: 1px dotted black;
+}
+
+footer {
+  text-align: center;
+  margin: 50px auto;
 }
 
 // Underline animation stolen from https://codepen.io/mxttsco/pen/KgodYm
