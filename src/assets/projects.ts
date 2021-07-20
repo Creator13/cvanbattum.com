@@ -3,6 +3,7 @@ import fluffy from "!raw-loader!@/assets/fluffy.md";
 import mimont from "!raw-loader!@/assets/mimont.md";
 import cfc from "!raw-loader!@/assets/cfc.md";
 import treasureChest from "!raw-loader!@/assets/treasure-chest.md";
+import gol from "!raw-loader!@/assets/gol.md";
 // import example from "!raw-loader!@/assets/example.md";
 
 const array: Project[] = [
@@ -49,7 +50,18 @@ const array: Project[] = [
         "year": 2021,
         "tags": ["unity", "dialogue", "entertainment", "storytelling", "c-sharp", "hku"],
         "techs": ["Unity 2021.1", "Yarn Spinner", "C#"]
-    }
+    },
+    {
+        "name": "Game of Life",
+        "slug": "game-of-life",
+        "thumbnailUri": "project_content/gol/thumb.png",
+        "splash": "project_content/gol/splash.png",
+        "content": gol,
+        "shortDescription": "Windows console version of the game of life in C++.",
+        "year": 2019,
+        "tags": ["c++", "hku"],
+        "techs": ["C++"]
+    },
     // {
     //     "name": "Test Project",
     //     "slug": "test-project",
