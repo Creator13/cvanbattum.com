@@ -3,7 +3,7 @@
     <header>
       <h1>Casper van Battum</h1>
     </header>
-    <div class="page-container horizontal-navigation">
+    <div class="page-container vertical-navigation">
       <!--<nav id="nav">
         <router-link class="slide-ltr" to="/">Home</router-link>
         <router-link class="slide-ltr" to="/projects">Projects</router-link>
@@ -53,9 +53,9 @@ header h1 {
   color: $text-dark;
 }
 
-//.page-container {
-//  display: flex;
-//}
+.vertical-navigation {
+  display: flex;
+}
 
 //nav {
 //  flex-basis: 170px;
@@ -126,10 +126,6 @@ header h1 {
 //  }
 //}
 
-$red: #F37272;
-$brown: #584E4A;
-$whitey: #f0f0f0;
-
 $duration: .2s;
 $distance: 8px;
 $easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
@@ -162,7 +158,7 @@ $easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
       &:after {
         content: '';
         position: absolute;
-        bottom: 0px;
+        bottom: 1px;
         left: 0;
         right: 0;
         height: 3px;
