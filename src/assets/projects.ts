@@ -9,7 +9,7 @@ const array: Project[] = [
         "name": "Connect for Coffee",
         "slug": "connect-for-coffee",
         "thumbnailUri": "project_content/connect-for-coffee/thumb.png",
-        "splash": "project_content/connect-for-coffee/thumb.png",
+        "splash": "project_content/connect-for-coffee/logo_notext.svg",
         "content": cfc,
         "shortDescription": "Meet strangers while searching for WiFi.",
         "year": 2019,
