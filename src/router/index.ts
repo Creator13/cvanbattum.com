@@ -6,7 +6,7 @@ import PortfolioOverview from "@/views/PortfolioOverview.vue"
 import PhotographyOverview from "@/views/PhotographyOverview.vue"
 import ContactView from "@/views/ContactView.vue"
 import NotFoundView from "@/views/NotFoundView.vue";
-import {projectExists} from "@/model/portfolioModel";
+import {nameFromSlug, projectExists} from "@/model/portfolioModel";
 
 function getPageTitle(targetPage: string) : string {
     if (!targetPage) {
@@ -47,7 +47,7 @@ const routes: Array<RouteConfig> = [
                 return;
             }
 
-            document.title = getPageTitle(to.params.projectName)
+            document.title = getPageTitle(nameFromSlug(to.params.projectSlug))
             next()
         }
     },

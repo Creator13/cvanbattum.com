@@ -18,3 +18,7 @@ export function projectExists(slug: string): boolean {
 export function loadAllProjects(): Project[] {
     return projects;
 }
+
+export function nameFromSlug(slug: string): string {
+    return projects.find(project => project.slug === slug)?.name ?? "";
+}

@@ -5,7 +5,8 @@ export interface Project {
     shortDescription: string;
     thumbnailUri: string;
     splash: string;
-    year: number;
+    year: string | number;
     tags: string[];
     techs: string[]
+    isFavorite?: boolean;
 }

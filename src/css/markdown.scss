@@ -6,6 +6,7 @@
 
 $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 @import "./node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+//@import "./node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
 @import "./node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
 @import "./node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
 
@@ -165,6 +166,11 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 
   .instructable::before {
     content: '\f5ae\00a0';
+    font-family: "Font Awesome 5 Free", serif;
+  }
+
+  .map::before {
+    content: '\f279\00a0';
     font-family: "Font Awesome 5 Free", serif;
   }
 

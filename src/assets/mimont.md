@@ -14,7 +14,7 @@ For the physical experience, networking is not strictly necessary. We could have
 <div class="video-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/ovXipv-U9Q0" title="YouTube video player" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe></div>
 
 ## UDP networking
-I implemented networking using the pre-release [Unity Transport package](https://docs.unity3d.com/Packages/com.unity.transport@0.3/manual/index.html) (v0.3), with plenty of support from my teacher and classmates. This package is very bare-bones and requires a lot of boilerplate before it can be used to make a game. In order to make it more usable and *re*usable, I took on the challenge of abstracting this code away. This has served as the basis for my [Basic Networking package](basic-networking).
+I implemented networking using the pre-release [Unity Transport package](https://docs.unity3d.com/Packages/com.unity.transport@0.3/manual/index.html) (v0.3), with plenty of support from my teacher and classmates. This package is very bare-bones and requires a lot of boilerplate before it can be used to make a game. In order to make it more usable and *re*usable, I took on the challenge of abstracting this code away. This has served as the basis for my <router-link to="projects/basic-networking">Basic Networking package</router-link>.
 
 ### Program structure
 The game is built on a server-client network model. Each game is hosted on an integrated server, which player 2 can join (currently directly using the IP address of player 1). This allowed me to write custom clients for debugging purposes as well as a single player mode.

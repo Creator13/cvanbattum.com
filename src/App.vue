@@ -1,14 +1,14 @@
 <template>
   <div id="app">
-    <header>
+    <header class="site-header">
       <h1>Casper van Battum</h1>
     </header>
     <div class="page-container horizontal-navigation">
       <nav id="nav">
-        <router-link to="/">Home</router-link>
+        <router-link to="/">About</router-link>
         <router-link to="/projects">Projects</router-link>
-<!--        <router-link to="/photos">Photography</router-link>-->
-<!--        <router-link to="/contact">Contact</router-link>-->
+        <!--        <router-link to="/photos">Photography</router-link>-->
+        <!--        <router-link to="/contact">Contact</router-link>-->
       </nav>
       <transition name="fade" mode="out-in">
         <router-view id="router-view"/>
@@ -163,13 +163,13 @@ $easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
 
       &:before {
         opacity: 0;
-        transform: translateY(- $distance);
+        transform: translateY(-$distance);
         transition: transform 0s $easeOutBack, opacity 0s;
       }
 
       &:after {
         opacity: 0;
-        transform: translateY($distance/2);
+        transform: translateY($distance / 2);
         transition: transform $duration $easeOutBack, opacity $duration;
       }
 

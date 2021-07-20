@@ -2,7 +2,7 @@ Instead of a lock, the Digital Treasure Chest opens by entering a code. Not just
 
 Apart from learning to work with **microcontrollers** and **electronics**, I also tried out new skills such as **welding** and **metalworking**. This project was made for the first-year HKU course "If This Then That".
 
-<div class="video-wrapper"></div>
+<div class="video-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/o7wc2ysCQ_0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 ## Driving a 14-segment display
 The chest uses a 14-segment display to communicate the current value with the user. I had been wanting to program these displays for years, and this course proved to be the perfect opportunity for that. In order to drive these displays, I had to write a custom C++ controller. It uses a port expander and bit-encoded values to drive the characters individually.

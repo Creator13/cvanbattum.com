@@ -1,11 +1,12 @@
 <template>
   <div class="card">
     <router-link :to="{name: 'project-view', params: {projectSlug: projectObject.slug}}">
+      <font-awesome-icon v-if="projectObject.isFavorite" icon="crown" class="favorite-icon" title="Personal favorite"/>
       <div class="card-overlay">
         <img class="card-img" :src="projectObject.thumbnailUri" :alt="projectObject.slug"/></div>
       <div class="card-text fadeIn-bottom">
         <h3>{{ projectObject.name }}</h3>
-        <p v-if="projectObject.shortDescription">{{projectObject.shortDescription}}</p>
+        <p v-if="projectObject.shortDescription">{{ projectObject.shortDescription }}</p>
       </div>
     </router-link>
   </div>
@@ -44,14 +45,21 @@ a {
   border-radius: $border-radius;
   overflow: hidden;
   box-shadow: $box-shadow;
-}
 
-.card {
   position: relative;
   width: 100%;
   max-width: 400px;
   margin: auto;
-  overflow: hidden;
+
+  .favorite-icon {
+    transition: $transition;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: $accent-main;
+    z-index: 10;
+    font-size: 1.2em;
+  }
 }
 
 .card .card-overlay::after {
@@ -68,9 +76,14 @@ a {
   transition: $transition;
 }
 
-.card:hover .card-overlay::after {
+.card:hover {
+  .favorite-icon {
+    color: $text-light;
+  }
+
+  .card-overlay::after {
   opacity: 1;
-}
+}}
 
 .card-img {
   width: 100%;
