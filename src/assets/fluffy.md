@@ -25,4 +25,4 @@ The power of Yarn Spinner lies in the highly configurable Yarn files. On top of 
 - [Naomi Aalbers](https://www.instagram.com/aalbersnaomi/) - Dialogue writing
 - And special thanks to [Tim de Jongh](https://timthelittlefoxbus.wixsite.com/home) who offered to create a soundtrack for our game!
 
-[Source code on GitHub](https://github.com/Creator13/FluffyGame){.external-link} [Play on Itch.io!](https://cvbattum.itch.io/fluffy){.external-link} {.link-container}
+[Play on Itch.io!](https://cvbattum.itch.io/fluffy){.external-link}{.game} [Source code on GitHub](https://github.com/Creator13/FluffyGame){.external-link}{.github} {.link-container}

@@ -7,6 +7,7 @@
 $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 @import "./node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "./node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "./node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
 
 .markdown {
   font-size: 11.5pt;
@@ -144,6 +145,26 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
         color: rgba($accent-secondary, .85);
       }
     }
+  }
+
+  .github::before {
+    content: '\f09b\00a0';
+    font-family: "Font Awesome 5 Brands", serif;
+  }
+
+  .file::before {
+    content: '\f15c\00a0';
+    font-family: "Font Awesome 5 Free", serif;
+  }
+
+  .game::before {
+    content: '\f11b\00a0';
+    font-family: "Font Awesome 5 Free", serif;
+  }
+
+  .instructable::before {
+    content: '\f5ae\00a0';
+    font-family: "Font Awesome 5 Free", serif;
   }
 
   .link-container {

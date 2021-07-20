@@ -24,4 +24,4 @@ Raspberry Pis are surprisingly customizable little machines. Leveraging the powe
 - Me: back-end programming, hardware & playtesting support
 
 
-[GitHub repo](https://github.com/Creator13/ConnectForCoffee){.external-link} {.link-container}
+[GitHub repo](https://github.com/Creator13/ConnectForCoffee){.external-link}{.github} {.link-container}

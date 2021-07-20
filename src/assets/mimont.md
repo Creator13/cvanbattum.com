@@ -29,4 +29,4 @@ The game is built on a server-client network model. Each game is hosted on an in
 - [Leon van Oldenborgh](https://p4radigm.itch.io/)
 - Me
 
-[Play on Itch.io](https://p4radigm.itch.io/mimont){.external-link} [Code on GitHub](https://github.com/Creator13/Mimont){.external-link} [Design document](https://docs.google.com/document/d/1LVjTTzhnp1LH14JwPJwHEUcqjaw-YE4A5-iJ0DFeMWU/edit?usp=sharing){.external-link} {.link-container}
+[Play on Itch.io](https://p4radigm.itch.io/mimont){.external-link}{.game} [Code on GitHub](https://github.com/Creator13/Mimont){.external-link}{.github} [Design document](https://docs.google.com/document/d/1LVjTTzhnp1LH14JwPJwHEUcqjaw-YE4A5-iJ0DFeMWU/edit?usp=sharing){.external-link}{.file} {.link-container}
