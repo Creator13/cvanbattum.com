@@ -1,6 +1,7 @@
 import {Project} from "@/types/project";
 import fluffy from "!raw-loader!@/assets/fluffy.md";
 import mimont from "!raw-loader!@/assets/mimont.md";
+import cfc from "!raw-loader!@/assets/cfc.md";
 // import example from "!raw-loader!@/assets/example.md";
 
 const array: Project[] = [
@@ -9,11 +10,11 @@ const array: Project[] = [
         "slug": "connect-for-coffee",
         "thumbnailUri": "project_content/connect-for-coffee/thumb.png",
         "splash": "project_content/connect-for-coffee/thumb.png",
-        "content": "CFC is a **fun** game lorem ispsum blablablala",
+        "content": cfc,
         "shortDescription": "Meet strangers while searching for WiFi.",
         "year": 2019,
         "tags": ["unity", "dialogue", "entertainment", "storytelling"],
-        "techs": ["Unity 2021.1", "Yarn Spinner", "C#"]
+        "techs": ["Node.js", "Websockets", "Raspberry Pi", "WiFi captive portal"]
     },
     {
         "name": "Mimont",
