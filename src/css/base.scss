@@ -4,6 +4,7 @@
 @import "effects";
 
 ::selection {
+  color: $text-dark;
   background-color: $accent-main;
 }
 

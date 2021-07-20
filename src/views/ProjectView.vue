@@ -81,11 +81,11 @@ export default Vue.extend({
   }
 
   h5 {
-    color: darken($background, 15);
+    color: mix($text-light, $background, 15);
     font-size: 1.5em;
 
     span {
-      color: darken($background, 25);
+      color: mix($text-light, $background, 35);
       font-size: .8em;
     }
   }
@@ -115,8 +115,6 @@ export default Vue.extend({
 
 }
 @media screen and (max-width: 600px) {
-
-
   .splash-image {
     height: 400px;
   }

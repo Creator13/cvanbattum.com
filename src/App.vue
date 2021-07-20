@@ -34,10 +34,14 @@ export default Vue.extend({
 @import "css/colors";
 @import "css/base";
 
+body, html {
+  width: 100%;
+}
+
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  box-sizing: content-box;
+  box-sizing: border-box;
   display: block;
   color: $text-light;
   margin: 0 auto;
@@ -219,14 +223,16 @@ footer {
 }
 
 @media screen and (max-width: 1450px) {
+
   #app {
-    width: fit-content;
+    width: calc(100% - 2 * 50px);
     margin: 0 50px;
   }
 }
 
 @media screen and (max-width: 600px) {
   #app {
+    width: calc(100% - 2 * 25px);
     margin: 0 25px;
   }
 
