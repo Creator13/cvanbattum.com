@@ -36,12 +36,14 @@ export default Vue.extend({
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: content-box;
+  display: block;
   color: $text-light;
-  width: 62.5%;
   margin: 0 auto;
+  width: 62.5%;
 }
 
-header h1 {
+.site-header h1 {
   font-family: "Adelle", sans-serif;
   font-weight: 300;
   font-size: 3.5em;
@@ -152,8 +154,21 @@ nav a.router-link-exact-active:hover {
 
 @media screen and (max-width: 1450px) {
   #app {
-    width: calc(100% - 2 * 50px);
+    width: fit-content;
     margin: 0 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #app {
+    margin: 0 25px;
+  }
+
+  .site-header {
+    h1 {
+      text-align: center;
+      font-size: 8.4vw;
+    }
   }
 }
 </style>

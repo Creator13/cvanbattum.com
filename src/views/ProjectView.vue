@@ -101,6 +101,27 @@ export default Vue.extend({
   border-radius: 8px
 }
 
+@media screen and (max-width: 1070px) {
+  .project-title {
+    right: 0;
+    left: 0;
+    bottom: 1.5em;
+
+    h1 {
+      padding: 0;
+    }
+  }
+
+
+}
+@media screen and (max-width: 600px) {
+
+
+  .splash-image {
+    height: 400px;
+  }
+}
+
 </style>
 
 <style lang="scss">
@@ -133,18 +154,6 @@ $inner-margin: 40px;
 }
 
 @media screen and (max-width: 1070px) {
-  .project-title {
-    right: 0;
-    left: 0;
-    text-align: center;
-    padding-left: 0;
-    padding-right: 0;
-
-    h1 {
-      padding: 0;
-    }
-  }
-
   .markdown {
     $width: .95;
 
@@ -155,6 +164,23 @@ $inner-margin: 40px;
     .video-wrapper {
       width: percentage($width);
       padding-bottom: 56.2% * $width;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  $inner-margin: 10px;
+
+  .markdown {
+    margin: auto $inner-margin;
+
+    h1, h2 {
+      margin-left: -$inner-margin;
+      margin-right: -$inner-margin;
+    }
+
+    .intro {
+      width: 100%;
     }
   }
 }

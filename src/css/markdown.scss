@@ -149,10 +149,11 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
   .link-container {
     display: flex;
     justify-content: center;
-    margin: 3em 0;
+    flex-wrap: wrap;
+    margin: 2em;
 
     .external-link {
-      margin: 0 1em;
+      margin: 1em;
     }
   }
 }

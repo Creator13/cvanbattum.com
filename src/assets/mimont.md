@@ -1,4 +1,4 @@
-*Mimont* is an interactive experience which explores what kissing is supposed. Two players find themselves in a sea container, and they're separated by a glass panel. Their goal is to earn points by kissing the glass at the right places, but what happens when they end up kissing at the same spot?{.intro}
+*Mimont* is an interactive experience which explores what kissing is supposed. Two players find themselves in a sea container, and they're separated by a glass panel. Their goal is to earn points by kissing the glass at the right place, but what happens when they end up kissing at the same spot?{.intro}
 
 This physical interactive experience is meant to be deployed at festivals or popular events that attract a wide public.
 
