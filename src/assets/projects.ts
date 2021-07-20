@@ -1,15 +1,15 @@
 import {Project} from "@/types/project";
-import fluffy from "!raw-loader!@/assets/fluffy.md";
-import mimont from "!raw-loader!@/assets/mimont.md";
-import cfc from "!raw-loader!@/assets/cfc.md";
-import treasureChest from "!raw-loader!@/assets/treasure-chest.md";
-import gol from "!raw-loader!@/assets/gol.md";
-import graphProg from "!raw-loader!@/assets/graphprog.md";
+import fluffy from "@/assets/fluffy.md";
+import mimont from "@/assets/mimont.md";
+import cfc from "@/assets/cfc.md";
+import treasureChest from "@/assets/treasure-chest.md";
+import gol from "@/assets/gol.md";
+import graphProg from "@/assets/graphprog.md";
 // import simfluencer from "!raw-loader!@/assets/simfluencer.md";
-import cliffsideCave from "!raw-loader!@/assets/cliffside-cave.md";
-import proceduralTrees from "!raw-loader!@/assets/procedural-trees.md";
-import buidlingAnalyzer from "!raw-loader!@/assets/buildings-osm.md";
-import basicNetworking from "!raw-loader!@/assets/basic-networking.md";
+import cliffsideCave from "@/assets/cliffside-cave.md";
+import proceduralTrees from "@/assets/procedural-trees.md";
+import buidlingAnalyzer from "@/assets/buildings-osm.md";
+import basicNetworking from "@/assets/basic-networking.md";
 // import example from "!raw-loader!@/assets/example.md";
 
 const array: Project[] = [
