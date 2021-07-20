@@ -7,7 +7,8 @@
     "build": "npm run compile:config && vue-cli-service build",
     "lint": "vue-cli-service lint",
     "compile:config": "tsc -m commonjs --esModuleInterop vue.config.ts",
-    "deploy": "npm run build && push-dir --dir=dist --branch=gh-pages --cleanup"
+    "deploy": "npm run build && npm run deploy:no-build",
+    "deploy:no-build": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
