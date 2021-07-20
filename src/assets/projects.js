@@ -1,6 +1,6 @@
-import {Project} from "../types/project";
-
-const projects: Project[] = [
+"use strict";
+exports.__esModule = true;
+var projects = [
     {
         "name": "Mimont",
         "slug": "mimont",
@@ -11,7 +11,7 @@ const projects: Project[] = [
         "year": 2020,
         "tags": ["unity", "networking", "experience", "emotional", "csharp", "hku"],
         "techs": ["Unity 2019.3", "UDP networking", "C#"],
-        "isFavorite": true,
+        "isFavorite": true
     },
     {
         "name": "Procedural tree generator",
@@ -34,7 +34,7 @@ const projects: Project[] = [
         "year": 2021,
         "tags": ["unity", "dialogue", "entertainment", "storytelling", "c-sharp", "hku"],
         "techs": ["Unity 2021.1", "Yarn Spinner", "C#"],
-        "isFavorite": true,
+        "isFavorite": true
     },
     {
         "name": "Connect for Coffee",
@@ -46,7 +46,7 @@ const projects: Project[] = [
         "year": 2019,
         "tags": ["interaction", "web", "nodejs", "emotional", "humanity", "social", "hku"],
         "techs": ["Node.js", "Websockets", "Raspberry Pi", "WiFi"],
-        "isFavorite": true,
+        "isFavorite": true
     },
     {
         "name": "Game of Life",
@@ -69,7 +69,7 @@ const projects: Project[] = [
         "year": 2018,
         "tags": ["arduino", "c++", "hardware", "hku"],
         "techs": ["Arduino", "C/C++", "Electronics", "Wood & metalworking"],
-        "isFavorite": true,
+        "isFavorite": true
     },
     // {
     //     // TODO
@@ -105,7 +105,7 @@ const projects: Project[] = [
         "shortDescription": "Node.js tool to help track progress mapping a town on OpenStreetMap",
         "year": "2020-2021",
         "tags": ["nodejs", "javascript", "openstreetmap"],
-        "techs": ["Node.js", "OverPass API", "OpenStreetMap"],
+        "techs": ["Node.js", "OverPass API", "OpenStreetMap"]
     },
     {
         // TODO
@@ -143,17 +143,5 @@ const projects: Project[] = [
         "tags": ["unity", "csharp", "networking"],
         "techs": ["Unity", "C#", "UDP Networking"]
     },
-    // {
-    //     "name": "Test Project",
-    //     "slug": "test-project",
-    //     "thumbnailUri": "project_content/thumbX.png",
-    //     "splash": "project_content/thumbX.png",
-    //     "content": example,
-    //     "shortDescription": "",
-    //     "year": 2081,
-    //     "tags": ["unity", "dialogue", "entertainment", "storytelling"],
-    //     "techs": ["Unity 2021.1", "Yarn Spinner", "C#"]
-    // },
 ];
-
-export default projects;
+exports["default"] = projects;

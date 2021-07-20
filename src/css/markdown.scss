@@ -2,11 +2,9 @@
 @import "fonts";
 @import "effects";
 @import "components";
-@use "sass:math";
 
 $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 @import "./node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
-//@import "./node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
 @import "./node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
 @import "./node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
 

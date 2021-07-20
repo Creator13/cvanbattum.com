@@ -4,8 +4,10 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "npm run compile:config && vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "compile:config": "tsc -m commonjs --esModuleInterop vue.config.ts",
+    "deploy": "npm run build && push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
@@ -39,9 +41,11 @@
     "node-sass": "^6.0.1",
     "path": "^0.12.7",
     "prerender-spa-plugin": "^3.4.0",
+    "push-dir": "^0.4.1",
     "raw-loader": "^4.0.2",
     "sass-loader": "^10.2.0",
     "typescript": "~4.1.5",
+    "vue-cli-plugin-prerender-spa": "~1.1.6",
     "vue-template-compiler": "^2.6.11"
   }
 }
