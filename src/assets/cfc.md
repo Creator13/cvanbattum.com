@@ -2,7 +2,7 @@
 
 We designed *#ConnectForCoffee* for public waiting areas, like **train stations** and **airports**. As you're searching for a public WiFi network, instead of connecting to the internet, a little game will open and will **connect you to another person** waiting in the same area. Ask the person our **carefully prepared questions** to find out their looks and whereabouts, and if you manage to find each other, you'll both be rewarded by a **free cup of coffee** to enjoy **together**!
 
-<div class="video-wrapper"><iframe src="https://player.vimeo.com/video/382012948?portrait=0" width="640" height="399" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+<div class="video-wrapper" ><iframe src="https://player.vimeo.com/video/382012948?portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
 
 ## Hijacking public WiFi
 In order for it to work, we needed to surprise our players with something they didn't expect. As they try to connect to a seemingly normal public WiFi network, we wanted to surprise them with our game. In one of the first experiments we performed, we set up a small Arduino with WiFi to emit a network with the same name as the one at the Utrecht train station, and waited for people to connect to it. We asked them to come find us if they did, and against all our expectations we met a few people! 
