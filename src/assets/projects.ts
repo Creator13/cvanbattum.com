@@ -103,7 +103,7 @@ const projects: Project[] = [
         "splash": "project_content/buildings-osm/splash.png",
         "content": "",
         "shortDescription": "Node.js tool to help track progress mapping a town on OpenStreetMap",
-        "year": "2020-2021",
+        "year": 2020,
         "tags": ["nodejs", "javascript", "openstreetmap"],
         "techs": ["Node.js", "OverPass API", "OpenStreetMap"],
     },

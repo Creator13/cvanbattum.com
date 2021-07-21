@@ -7,7 +7,6 @@ import cfc from "@/assets/cfc.md";
 import treasureChest from "@/assets/treasure-chest.md";
 import gol from "@/assets/gol.md";
 import graphProg from "@/assets/graphprog.md";
-// import simfluencer from "!raw-loader!@/assets/simfluencer.md";
 import cliffsideCave from "@/assets/cliffside-cave.md";
 import proceduralTrees from "@/assets/procedural-trees.md";
 import buidlingAnalyzer from "@/assets/buildings-osm.md";
@@ -22,7 +21,7 @@ const markdown: {[id: string]: string} = {
     "treasure-chest": treasureChest,
     "game-of-life": gol,
     "tree-generator": proceduralTrees,
-    "building-analyzer": buidlingAnalyzer,
+    "building-osm": buidlingAnalyzer,
     "graphprog": graphProg,
     "cliffside-cave": cliffsideCave,
     "basic-networking": basicNetworking,
