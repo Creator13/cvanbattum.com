@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "npm run compile:config && vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "compile:config": "tsc -m commonjs --esModuleInterop vue.config.ts",
+    "compile:config": "tsc -m commonjs --esModuleInterop vue.config.ts"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
