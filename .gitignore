@@ -21,3 +21,7 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+vue.config.js
+types/project.js
+assets/projects.js

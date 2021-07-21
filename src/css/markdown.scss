@@ -3,10 +3,18 @@
 @import "effects";
 @import "components";
 
-$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
-@import "./node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
-@import "./node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
-@import "./node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+//$fa-font-path: "./node_modules/@fortawesome/fontawesome-free/webfonts";
+//@import "./node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+//@import "./node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+//@import "./node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+//$fa-font-path: "~@fortawesome/fontawesome-free/webfonts/";
+//@import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+//@import '~@fortawesome/fontawesome-free/scss/solid.scss';
+//@import '~@fortawesome/fontawesome-free/scss/brands.scss';
+$fa-font-path: "/webfonts";
+@import "fontawesome/scss/fontawesome";
+@import "fontawesome/scss/brands";
+@import "fontawesome/scss/solid";
 
 .markdown {
   font-size: 11.5pt;
@@ -149,27 +157,32 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 
   .github::before {
     content: '\f09b\00a0';
-    font-family: "Font Awesome 5 Brands", serif;
+    font-family: "Font Awesome\ 5 Brands", serif;
+    font-weight: 400;
   }
 
   .file::before {
     content: '\f15c\00a0';
-    font-family: "Font Awesome 5 Free", serif;
+    font-family: "Font Awesome\ 5 Free", serif;
+    font-weight: 900;
   }
 
   .game::before {
     content: '\f11b\00a0';
-    font-family: "Font Awesome 5 Free", serif;
+    font-family: "Font Awesome\ 5 Free", serif;
+    font-weight: 900;
   }
 
   .instructable::before {
     content: '\f5ae\00a0';
-    font-family: "Font Awesome 5 Free", serif;
+    font-family: "Font Awesome\ 5 Free", serif;
+    font-weight: 900;
   }
 
   .map::before {
     content: '\f279\00a0';
-    font-family: "Font Awesome 5 Free", serif;
+    font-family: "Font Awesome\ 5 Free", serif;
+    font-weight: 900;
   }
 
   .link-container {
