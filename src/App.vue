@@ -8,7 +8,7 @@
         <router-link to="/">About</router-link>
         <router-link to="/projects">Projects</router-link>
         <!--        <router-link to="/photos">Photography</router-link>-->
-        <!--        <router-link to="/contact">Contact</router-link>-->
+                <router-link to="/contact">Contact</router-link>
       </nav>
       <transition name="fade" mode="out-in">
         <router-view id="router-view"/>

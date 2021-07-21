@@ -22,6 +22,6 @@ pnpm-debug.log*
 *.sln
 *.sw?
 
-vue.config.js
-types/project.js
-assets/projects.js
+#vue.config.js
+#types/project.js
+#assets/projects.js
