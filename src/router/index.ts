@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter, {RouteConfig} from 'vue-router'
-import Home from '../views/Home.vue'
+import AboutView from '../views/AboutView.vue'
 import ProjectView from "@/views/ProjectView.vue"
 import PortfolioOverview from "@/views/PortfolioOverview.vue"
 import PhotographyOverview from "@/views/PhotographyOverview.vue"
@@ -23,7 +23,7 @@ const routes: Array<RouteConfig> = [
     {
         path: '/',
         name: 'home',
-        component: Home,
+        component: AboutView,
         meta: {
             pageTitle: ""
         }

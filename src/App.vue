@@ -1,15 +1,24 @@
 <template>
   <div id="app">
-    <header class="site-header">
-      <h1>Casper van Battum</h1>
+    <header style="">
+      <h1 class="site-header" style="margin: 0">Casper van Battum</h1>
+      <h3>
+        <a href="https://github.com/Creator13">
+          <font-awesome-icon :icon="['fab', 'github']"/>
+        </a>
+        <a href="https://www.instagram.com/cvbattum/">
+          <font-awesome-icon :icon="['fab', 'instagram']"/>
+        </a>
+        <a href="https://unsplash.com/@cvbattum/">
+          <font-awesome-icon :icon="['fab', 'unsplash']"/>
+        </a>
+        <a href="https://www.linkedin.com/in/cvanbattum/">
+          <font-awesome-icon :icon="['fab', 'linkedin']"/>
+        </a>
+      </h3>
     </header>
     <div class="page-container horizontal-navigation">
-      <nav id="nav">
-        <router-link to="/">About</router-link>
-        <router-link to="/projects">Projects</router-link>
-        <!--        <router-link to="/photos">Photography</router-link>-->
-                <router-link to="/contact">Contact</router-link>
-      </nav>
+      <Navigation/>
       <transition name="fade" mode="out-in">
         <router-view id="router-view"/>
       </transition>
@@ -18,14 +27,34 @@
       © Casper van Battum 2021 &#x2022; <a href="https://github.com/Creator13/cvanbattum.com" target="_blank">View
       website source code</a>
     </footer>
+    <!--    <div class="splash-image">-->
+    <!--      <div class="splash-text">-->
+    <!--        <h1 class="site-header">Casper van Battum</h1>-->
+    <!--        <h2>Programmer &bullet; Game developer &bullet; Photographer</h2>-->
+    <!--        <h3>-->
+    <!--          <a href="https://github.com/Creator13"><font-awesome-icon :icon="['fab', 'github']"/></a>-->
+    <!--          <a href="https://www.instagram.com/cvbattum/"><font-awesome-icon :icon="['fab', 'instagram']"/></a>-->
+    <!--          <a href="https://unsplash.com/@cvbattum/"><font-awesome-icon :icon="['fab', 'unsplash']"/></a>-->
+    <!--          <a href="https://www.linkedin.com/in/cvanbattum/"><font-awesome-icon :icon="['fab', 'linkedin']"/></a>-->
+    <!--        </h3>-->
+    <!--      </div>-->
+    <!--    </div>-->
+    <!--    <div class="mission-statement">-->
+    <!--      I want to create as many different ways as I can for others to experience and discover the world that we live in, while staying true to what makes us human.-->
+    <!--    </div>-->
+    <!--    <transition name="fade" mode="out-in">-->
+    <!--      <router-view id="router-view"/>-->
+    <!--    </transition>-->
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
+import Navigation from "@/components/Navigation.vue";
 
 export default Vue.extend({
-  name: 'App'
+  name: 'App',
+  components: {Navigation}
 })
 </script>
 
@@ -46,13 +75,6 @@ body, html {
   color: $text-light;
   margin: 0 auto;
   width: 62.5%;
-}
-
-.site-header h1 {
-  font-family: "Adelle", sans-serif;
-  font-weight: 300;
-  font-size: 3.5em;
-  color: $text-dark;
 }
 
 .vertical-navigation {
@@ -244,3 +266,168 @@ footer {
   }
 }
 </style>
+
+<style scoped lang="scss">
+@import "css/effects";
+@import "css/colors";
+@import "css/base";
+
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+
+  h1.site-header {
+    font-family: "Adelle", sans-serif;
+    font-weight: 300;
+    font-size: 3.5em;
+    color: $text-dark;
+  }
+
+  h3 {
+    font-weight: 300;
+    letter-spacing: .075em;
+    font-size: 1.75em;
+
+    a, a:visited {
+      color: $text-light;
+      padding: .2em .4em;
+      margin: .2em;
+      border-radius: 8px;
+      transition-property: background-color, color;
+
+      &:hover {
+        color: $accent-main;
+      }
+    }
+
+    :last-child {
+      margin-right: 0;
+    }
+  }
+}
+</style>
+
+<!--<style lang="scss">-->
+<!--@import "css/effects";-->
+<!--@import "css/colors";-->
+<!--@import "css/base";-->
+
+<!--.splash-image {-->
+<!--  background-image: url('/splash.jpg');-->
+<!--  display: block;-->
+<!--  width: 100%;-->
+<!--  height: 38vw;-->
+<!--  //height: 33vw;-->
+<!--  background-position: center;-->
+<!--  background-size: cover;-->
+<!--  position: relative;-->
+<!--}-->
+
+<!--.splash-text {-->
+<!--  width: 100%;-->
+<!--  display: block;-->
+<!--  position: absolute;-->
+<!--  top: 20%;-->
+
+<!--  h1, h2, h3 {-->
+<!--    font-family: "Adelle", sans-serif;-->
+
+<!--    text-align: center;-->
+<!--    color: $background;-->
+<!--    padding: 15px 30px;-->
+<!--    background-color: rgba($text-light, .585);-->
+<!--    backdrop-filter: blur(10px);-->
+<!--    margin: 15px 0;-->
+<!--  }-->
+
+<!--  h1.site-header {-->
+<!--    font-weight: 400;-->
+<!--    text-transform: uppercase;-->
+<!--    font-size: 5em;-->
+<!--    letter-spacing: .05em;-->
+<!--  }-->
+
+<!--  h2, h3 {-->
+<!--    font-weight: 300;-->
+<!--    letter-spacing: .075em;-->
+<!--    font-size: 1.75em;-->
+
+<!--    width: fit-content;-->
+<!--    box-sizing: border-box;-->
+<!--    margin-left: auto;-->
+<!--    margin-right: auto;-->
+<!--  }-->
+
+<!--  h3 {-->
+<!--    a {-->
+<!--      color: $background;-->
+<!--      margin: 0 10px;-->
+
+<!--      &:hover {-->
+<!--        color: $accent-main;-->
+<!--        background: none;-->
+<!--      }-->
+<!--    }-->
+<!--  }-->
+
+<!--  :first-child {-->
+<!--    margin-top: 0;-->
+<!--  }-->
+
+<!--  :last-child {-->
+<!--    margin-bottom: 0;-->
+<!--  }-->
+<!--}-->
+
+<!--@-moz-document url-prefix(){-->
+<!--  .splash-text {-->
+<!--    h1, h2, h3 {-->
+<!--      background-color: rgba($text-light, .80);-->
+<!--    }-->
+<!--  }-->
+<!--}-->
+
+<!--@media screen and (max-width: 1280px) {-->
+<!--  .splash-image {-->
+<!--    height: 500px;-->
+<!--  }-->
+
+<!--  .splash-text {-->
+<!--    h1.site-header {-->
+<!--      font-size: 3em;-->
+<!--      box-sizing: border-box;-->
+<!--    }-->
+
+<!--    h2, h3 {-->
+<!--      font-size: 1.2em;-->
+<!--    }-->
+<!--  }-->
+<!--}-->
+
+<!--//@media screen and (max-width: 768px) {-->
+<!--//  .splash-image {-->
+<!--//    height: 350px;-->
+<!--//  }-->
+<!--//}-->
+
+<!--@media screen and (max-width: 625px) {-->
+<!--  .splash-image {-->
+<!--    height: fit-content;-->
+<!--    background: none;-->
+<!--  }-->
+
+<!--  .splash-text {-->
+<!--    position: static;-->
+<!--    overflow: hidden;-->
+
+<!--    h1, h2, h3 {-->
+<!--      background: $text-light;-->
+<!--      width: 100%;-->
+<!--      overflow: auto;-->
+<!--    }-->
+<!--  }-->
+<!--}-->
+<!--</style>-->

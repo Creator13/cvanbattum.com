@@ -11,5 +11,7 @@ export default Vue.extend({
 </script>
 
 <style scoped lang="scss">
-
+h1 {
+  text-align: center;
+}
 </style>

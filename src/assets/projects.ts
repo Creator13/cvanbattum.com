@@ -84,7 +84,6 @@ const projects: Project[] = [
     //     "techs": ["Arduino", "C/C++", "Electronics", "Wood & metalworking"]
     // },
     {
-        // TODO
         "name": "Shaders in MonoGame",
         "slug": "graphprog",
         "thumbnailUri": "project_content/graphprog/thumb.jpg",
@@ -96,7 +95,6 @@ const projects: Project[] = [
         "techs": ["C#", "MonoGame", "OpenGL", "HLSL"]
     },
     {
-        // TODO
         "name": "Building Analyzer",
         "slug": "buildings-osm",
         "thumbnailUri": "project_content/buildings-osm/splash.png",
@@ -108,7 +106,6 @@ const projects: Project[] = [
         "techs": ["Node.js", "OverPass API", "OpenStreetMap"],
     },
     {
-        // TODO
         "name": "Cliffside cave",
         "slug": "cliffside-cave",
         "thumbnailUri": "project_content/envmod/thumb.jpg",
@@ -132,13 +129,12 @@ const projects: Project[] = [
     //     "techs": ["Unity", "C#"]
     // },
     {
-        // TODO
         "name": "Basic Networking",
         "slug": "basic-networking",
         "thumbnailUri": "project_content/basic-networking/thumb.png",
         "splash": "project_content/basic-networking/thumb.png",
         "content": "",
-        "shortDescription": "Custom-built chest that opens with a unique, digital code.",
+        "shortDescription": "Server-client UDP networking with the Unity Transport API.",
         "year": 2021,
         "tags": ["unity", "csharp", "networking"],
         "techs": ["Unity", "C#", "UDP Networking"]
