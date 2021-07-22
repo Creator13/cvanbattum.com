@@ -21,7 +21,7 @@ const markdown: {[id: string]: string} = {
     "treasure-chest": treasureChest,
     "game-of-life": gol,
     "tree-generator": proceduralTrees,
-    "building-osm": buidlingAnalyzer,
+    "buildings-osm": buidlingAnalyzer,
     "graphprog": graphProg,
     "cliffside-cave": cliffsideCave,
     "basic-networking": basicNetworking,
@@ -34,7 +34,7 @@ export function loadProject(slug: string): Project {
         return <Project>{};
     }
 
-    project.content = markdown[project.slug];
+    project.content = markdown[project.slug] ?? "**If you see this, something went wrong...**";
 
     return project;
 }

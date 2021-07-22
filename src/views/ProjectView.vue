@@ -98,7 +98,7 @@ export default Vue.extend({
   margin: 0 auto;
   background-position: center;
   background-size: cover;
-  border-radius: 8px
+  border-radius: $border-radius;
 }
 
 @media screen and (max-width: 1070px) {

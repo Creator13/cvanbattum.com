@@ -1,8 +1,12 @@
 <template>
   <div class="home">
     <main>
-      <h1>Welcome!</h1>
       <h2>I'm a Netherlands-based programmer, game developer and photographer</h2>
+      <div class="markdown">
+        <div class="link-container">
+          <a href="/casper_van_battum_cv_2021.pdf" class="download-link" download>Download my CV</a>
+        </div>
+      </div>
     </main>
     <div class="splash-image"></div>
   </div>
@@ -20,13 +24,15 @@ export default Vue.extend({
 @import "../css/base";
 @import "../css/colors";
 @import "../css/effects";
+@import "../css/markdown";
 
 .home {
   text-align: center;
 }
 
 main {
-  margin-bottom: 50px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 
   h1, h2 {
     font-family: "Adelle", sans-serif;
@@ -34,20 +40,24 @@ main {
     letter-spacing: .05em;
   }
 
-  h1 {
-    font-size: 2.75em;
+  h2 {
+    font-size: 1.75em;
   }
 }
 
 .splash-image {
   border-radius: $border-radius;
-  background-image: url("/splash2.jpg");
-  width: 100%;
-  height: 350px;
-  line-height: 350px;
+  background-image: url("/portrait.jpg");
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 500px;
   background-size: cover;
   background-position: center;
   text-align: center;
   vertical-align: center;
+}
+
+.link-container {
 }
 </style>

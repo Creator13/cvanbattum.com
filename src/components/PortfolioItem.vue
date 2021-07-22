@@ -42,7 +42,7 @@ a {
 
 .card {
   display: block;
-  border-radius: $border-radius;
+  //border-radius: $border-radius;
   overflow: hidden;
   box-shadow: $box-shadow;
 

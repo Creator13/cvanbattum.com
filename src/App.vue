@@ -241,7 +241,9 @@ $easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
 
 footer {
   text-align: center;
-  margin: 50px auto;
+  margin: 40px auto;
+  padding: 25px 0;
+  border-top: 1px dotted $text-dark
 }
 
 @media screen and (max-width: 1450px) {
