@@ -4,7 +4,7 @@ The focus of this two-week course in interactive narrative design at the HKU was
 
 ![Fluffy scene](/project_content/fluffy/screen_room.jpg){.no-shadow}
 
-## Creating a platform for collaborative branching dialogue
+## Creating a platform for **collaborative branching dialogue**
 My biggest challenge creating this game was to implement a system that allowed my teammates, some of whom had never coded or used Unity before, to contribute to the dialogue in a comprehensive way. In previous projects, I had made a graph-based dialogue editor with xNode, but those projects would quickly become exponentially more unmanageable the more conversations were involved. It would also have taken a significant time to set up.
 
 ![Fluffy scene](/project_content/fluffy/screen_fort.jpg){.no-shadow}
@@ -16,6 +16,11 @@ Through a bit of research, I ended up at these amazing talks on how [Firewatch](
 The power of Yarn Spinner lies in the highly configurable Yarn files. On top of containing our dialogue, I could leverage the power of **commands** and **variables** to manage a large part of the story progress. I implemented commands to trigger actions in the game (showing an item to the player for example) and record player choices. These commands then got captured by the dialogue runner where I could write handler functions and change the game's state based upon the commands. And the best part was that editing the files was easy enough for everyone to contribute when I had my hands full programming!
 
 ![Yarn file](/project_content/fluffy/screen_yarn2.png){.no-shadow}
+
+## Editor tools for **player agency**
+To improve the players' engagement with the story, we gave them more agency by giving them the choice of what Fluffy looks like. In several dialogue options (see above), the player can choose three properties: a pattern, a color, and an accessory. When Robin finally finds Fluffy, the in-game sprite of the plushy animal will reflect the choices the player made. To save the artists some work, I created a simple tool which mixes the different properties and generates a new sprite. Instead of having to create 27 permutations of Fluffy, one for each option, we only needed 9 images plus a base layer!
+
+![Mix 'n Match your plushy](/project_content/fluffy/plushy_mix.gif){.no-shadow}
 
 ## Made in collaboration with
 
