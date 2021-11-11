@@ -3,16 +3,16 @@
     <header style="">
       <h1 class="site-header" style="margin: 0">Casper van Battum</h1>
       <h3>
-        <a href="https://github.com/Creator13">
+        <a href="https://github.com/Creator13" target="_blank">
           <font-awesome-icon :icon="['fab', 'github']"/>
         </a>
-        <a href="https://www.instagram.com/cvbattum/">
+        <a href="https://www.instagram.com/cvbattum/" target="_blank">
           <font-awesome-icon :icon="['fab', 'instagram']"/>
         </a>
-        <a href="https://unsplash.com/@cvbattum/">
+        <a href="https://unsplash.com/@cvbattum/" target="_blank">
           <font-awesome-icon :icon="['fab', 'unsplash']"/>
         </a>
-        <a href="https://www.linkedin.com/in/cvanbattum/">
+        <a href="https://www.linkedin.com/in/cvanbattum/" target="_blank">
           <font-awesome-icon :icon="['fab', 'linkedin']"/>
         </a>
       </h3>

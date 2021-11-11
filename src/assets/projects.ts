@@ -72,16 +72,15 @@ const projects: Project[] = [
         "isFavorite": true,
     },
     // {
-    //     // TODO
     //     "name": "The Journalist",
-    //     "slug": "journalist",
-    //     "thumbnailUri": "project_content/treasure-chest/thumb.jpg",
-    //     "splash": "project_content/treasure-chest/splash.jpg",
+    //     "slug": "the-journalist",
+    //     "thumbnailUri": "project_content/journalist/thumb.png",
+    //     "splash": "project_content/journalist/thumb.png",
     //     "content": "",
     //     "shortDescription": "Custom-built chest that opens with a unique, digital code.",
     //     "year": "2020-2021",
-    //     "tags": ["arduino", "c++", "hardware", "hku"],
-    //     "techs": ["Arduino", "C/C++", "Electronics", "Wood & metalworking"]
+    //     "tags": ["web", "typescript", "node-js", "database", "full-stack"],
+    //     "techs": ["Webapp", "Vue", "Node.js", "MongoDB"]
     // },
     {
         "name": "Shaders in MonoGame",

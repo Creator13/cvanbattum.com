@@ -11,6 +11,7 @@ import cliffsideCave from "@/assets/cliffside-cave.md";
 import proceduralTrees from "@/assets/procedural-trees.md";
 import buidlingAnalyzer from "@/assets/buildings-osm.md";
 import basicNetworking from "@/assets/basic-networking.md";
+import theJournalist from "@/assets/the-journalist.md";
 // import example from "!raw-loader!@/assets/example.md";
 // import simfluencer from "!raw-loader!@/assets/simfluencer.md";
 
@@ -25,6 +26,7 @@ const markdown: {[id: string]: string} = {
     "graphprog": graphProg,
     "cliffside-cave": cliffsideCave,
     "basic-networking": basicNetworking,
+    "the-journalist": theJournalist
 }
 
 export function loadProject(slug: string): Project {

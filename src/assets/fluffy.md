@@ -20,7 +20,7 @@ The power of Yarn Spinner lies in the highly configurable Yarn files. On top of 
 ## Editor tools for **player agency**
 To improve the players' engagement with the story, we gave them more agency by giving them the choice of what Fluffy looks like. In several dialogue options (see above), the player can choose three properties: a pattern, a color, and an accessory. When Robin finally finds Fluffy, the in-game sprite of the plushy animal will reflect the choices the player made. To save the artists some work, I created a simple tool which mixes the different properties and generates a new sprite. Instead of having to create 27 permutations of Fluffy, one for each option, we only needed 9 images plus a base layer!
 
-![Mix 'n Match your plushy](/project_content/fluffy/plushy_mix.gif){.no-shadow}
+![Mix 'n Match Fluffy](/project_content/fluffy/plushy_mix.gif){.no-shadow}
 
 ## Made in collaboration with
 
