@@ -75,7 +75,7 @@ const projects: Project[] = [
         "name": "Mapsnap",
         "slug": "mapsnap",
         "thumbnailUri": "project_content/mapsnap/thumb.gif",
-        "splash": "project_content/mapsnap/thumb.gif",
+        "splash": "project_content/mapsnap/splash.png",
         "content": "",
         "shortDescription": "A command line tool to create snapshots and timelapses of OpenStreetMap.",
         "year": 2021,
