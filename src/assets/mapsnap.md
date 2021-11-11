@@ -1,6 +1,6 @@
 Mapsnap is a small command line tool to grab images from OpenStreetMap, targeted at mappers and contributors, with the purpose of creating snapshots and timelapses of mapping progress.{.intro}
 
-As a frequent contributor to the OpenStreetMap project, I wanted to create timelapses of the areas I was working on. I would simply create screenshots of the map at openstreetmap.org, crop them and stitch them together using some gif editor. This process was as cumbersome as it was unreliable and prone to errors, and mapsnap was born.
+As a frequent contributor to the OpenStreetMap project, I wanted to create timelapses of the areas I was working on. I would simply create screenshots of the map at openstreetmap.org, crop them and stitch them together using some gif editor. This process was as cumbersome as it was unreliable and prone to errors, so I decided to create a tool that would do it for me.
 
 ## Features
 - **Snapshot**: Capture any region of the rendered OpenStreetMap slippy map, by entering the boundary coordinates and the zoom level you want to want.
@@ -38,5 +38,8 @@ What began as a simple tool quickly became as much a quest to make myself better
 
 ### Command line interface
 Command line interfaces can be tricky to write. The parsing that is required can grow very large, very quickly. I opted for using a library instead of doing all the work myself. The one I chose is the [System.CommandLine](https://github.com/dotnet/command-line-api) package, which aims to greatly simplify the process of writing command line tools. It is developed as an optional part to the official .NET framework, and is currently still in beta. I found it to be more user-friendly and at least as feature-complete as the older and more popular [CommandlineParser](https://github.com/commandlineparser/commandline) package, and I would highly recommend keeping a close eye on it!
+
+## Interested?
+View the source code, downloads and full usage guide on Github:
 
 [Repository on GitHub](https://github.com/Creator13/mapsnap){.external-link}{.github} {.link-container}
