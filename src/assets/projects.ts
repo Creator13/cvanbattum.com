@@ -71,6 +71,18 @@ const projects: Project[] = [
         "techs": ["Arduino", "C/C++", "Electronics", "Wood & metalworking"],
         "isFavorite": true,
     },
+    {
+        "name": "Mapsnap",
+        "slug": "mapsnap",
+        "thumbnailUri": "project_content/mapsnap/thumb.gif",
+        "splash": "project_content/mapsnap/thumb.gif",
+        "content": "",
+        "shortDescription": "A command line tool to create snapshots and timelapses of OpenStreetMap.",
+        "year": 2021,
+        "tags": ["c-sharp", "openstreetmap", "osm", "dotnet", "image-processing", "cli"],
+        "techs": ["C#", ".NET 6.0", "OpenStreetMap", "CLI"],
+        "isFavorite": true,
+    },
     // {
     //     "name": "The Journalist",
     //     "slug": "the-journalist",
@@ -101,7 +113,7 @@ const projects: Project[] = [
         "content": "",
         "shortDescription": "Node.js tool to help track progress mapping a town on OpenStreetMap",
         "year": 2020,
-        "tags": ["nodejs", "javascript", "openstreetmap"],
+        "tags": ["nodejs", "javascript", "openstreetmap", "cli"],
         "techs": ["Node.js", "OverPass API", "OpenStreetMap"],
     },
     {

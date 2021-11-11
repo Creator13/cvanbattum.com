@@ -112,6 +112,10 @@ $fa-font-path: "/webfonts";
     &.no-shadow {
       box-shadow: none;
     }
+
+    &.auto-width {
+      width: auto;
+    }
   }
 
   .video-wrapper {
