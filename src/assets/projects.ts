@@ -14,15 +14,16 @@ const projects: Project[] = [
         "isFavorite": true,
     },
     {
-        "name": "Procedural tree generator",
-        "slug": "tree-generator",
-        "thumbnailUri": "project_content/tree-gen/thumb.png",
-        "splash": "project_content/tree-gen/thumb.png",
+        "name": "Mapsnap",
+        "slug": "mapsnap",
+        "thumbnailUri": "project_content/mapsnap/thumb.gif",
+        "splash": "project_content/mapsnap/splash.png",
         "content": "",
-        "shortDescription": "Low-poly tree mesh generator in Unity.",
-        "year": 2020,
-        "tags": ["unity", "3d modeling", "procedural", "c-sharp", "hku"],
-        "techs": ["Unity 2019", "C#"]
+        "shortDescription": "A command line tool to create snapshots and timelapses of OpenStreetMap.",
+        "year": 2021,
+        "tags": ["c-sharp", "openstreetmap", "osm", "dotnet", "image-processing", "cli"],
+        "techs": ["C#", ".NET 6.0", "OpenStreetMap", "CLI"],
+        "isFavorite": true,
     },
     {
         "name": "Where is Fluffy?",
@@ -72,28 +73,27 @@ const projects: Project[] = [
         "isFavorite": true,
     },
     {
-        "name": "Mapsnap",
-        "slug": "mapsnap",
-        "thumbnailUri": "project_content/mapsnap/thumb.gif",
-        "splash": "project_content/mapsnap/splash.png",
+        "name": "Procedural tree generator",
+        "slug": "tree-generator",
+        "thumbnailUri": "project_content/tree-gen/thumb.png",
+        "splash": "project_content/tree-gen/thumb.png",
         "content": "",
-        "shortDescription": "A command line tool to create snapshots and timelapses of OpenStreetMap.",
-        "year": 2021,
-        "tags": ["c-sharp", "openstreetmap", "osm", "dotnet", "image-processing", "cli"],
-        "techs": ["C#", ".NET 6.0", "OpenStreetMap", "CLI"],
-        "isFavorite": true,
+        "shortDescription": "Low-poly tree mesh generator in Unity.",
+        "year": 2020,
+        "tags": ["unity", "3d modeling", "procedural", "c-sharp", "hku"],
+        "techs": ["Unity 2019", "C#"]
     },
-    // {
-    //     "name": "The Journalist",
-    //     "slug": "the-journalist",
-    //     "thumbnailUri": "project_content/journalist/thumb.png",
-    //     "splash": "project_content/journalist/thumb.png",
-    //     "content": "",
-    //     "shortDescription": "Custom-built chest that opens with a unique, digital code.",
-    //     "year": "2020-2021",
-    //     "tags": ["web", "typescript", "node-js", "database", "full-stack"],
-    //     "techs": ["Webapp", "Vue", "Node.js", "MongoDB"]
-    // },
+    {
+        "name": "The Journalist",
+        "slug": "the-journalist",
+        "thumbnailUri": "project_content/journalist/webapp.jpg",
+        "splash": "project_content/journalist/splash.png",
+        "content": "",
+        "shortDescription": "Custom-built chest that opens with a unique, digital code.",
+        "year": "2020-2021",
+        "tags": ["web", "typescript", "node-js", "database", "full-stack"],
+        "techs": ["Webapp", "Vue", "Node.js", "MongoDB"]
+    },
     {
         "name": "Shaders in MonoGame",
         "slug": "graphprog",
@@ -106,17 +106,6 @@ const projects: Project[] = [
         "techs": ["C#", "MonoGame", "OpenGL", "HLSL"]
     },
     {
-        "name": "Building Analyzer",
-        "slug": "buildings-osm",
-        "thumbnailUri": "project_content/buildings-osm/splash.png",
-        "splash": "project_content/buildings-osm/splash.png",
-        "content": "",
-        "shortDescription": "Node.js tool to help track progress mapping a town on OpenStreetMap",
-        "year": 2020,
-        "tags": ["nodejs", "javascript", "openstreetmap", "cli"],
-        "techs": ["Node.js", "OverPass API", "OpenStreetMap"],
-    },
-    {
         "name": "Cliffside cave",
         "slug": "cliffside-cave",
         "thumbnailUri": "project_content/envmod/thumb.jpg",
@@ -126,6 +115,28 @@ const projects: Project[] = [
         "year": 2020,
         "tags": ["3d modeling", "environment", "storytelling", "hku"],
         "techs": ["Substance Painter", "Blender", "Unity HDRP"]
+    },
+    {
+        "name": "Basic Networking",
+        "slug": "basic-networking",
+        "thumbnailUri": "project_content/basic-networking/thumb.png",
+        "splash": "project_content/basic-networking/thumb.png",
+        "content": "",
+        "shortDescription": "Server-client UDP networking with the Unity Transport API.",
+        "year": 2021,
+        "tags": ["unity", "csharp", "networking"],
+        "techs": ["Unity", "C#", "UDP Networking"]
+    },
+    {
+        "name": "Building Analyzer",
+        "slug": "buildings-osm",
+        "thumbnailUri": "project_content/buildings-osm/splash.png",
+        "splash": "project_content/buildings-osm/splash.png",
+        "content": "",
+        "shortDescription": "Node.js tool to help track progress mapping a town on OpenStreetMap",
+        "year": 2020,
+        "tags": ["nodejs", "javascript", "openstreetmap", "cli"],
+        "techs": ["Node.js", "OverPass API", "OpenStreetMap"],
     },
     // {
     //     // TODO
@@ -138,28 +149,6 @@ const projects: Project[] = [
     //     "year": "2020",
     //     "tags": ["unity", "c#", "hku"],
     //     "techs": ["Unity", "C#"]
-    // },
-    {
-        "name": "Basic Networking",
-        "slug": "basic-networking",
-        "thumbnailUri": "project_content/basic-networking/thumb.png",
-        "splash": "project_content/basic-networking/thumb.png",
-        "content": "",
-        "shortDescription": "Server-client UDP networking with the Unity Transport API.",
-        "year": 2021,
-        "tags": ["unity", "csharp", "networking"],
-        "techs": ["Unity", "C#", "UDP Networking"]
-    },
-    // {
-    //     "name": "Test Project",
-    //     "slug": "test-project",
-    //     "thumbnailUri": "project_content/thumbX.png",
-    //     "splash": "project_content/thumbX.png",
-    //     "content": example,
-    //     "shortDescription": "",
-    //     "year": 2081,
-    //     "tags": ["unity", "dialogue", "entertainment", "storytelling"],
-    //     "techs": ["Unity 2021.1", "Yarn Spinner", "C#"]
     // },
 ];
 
