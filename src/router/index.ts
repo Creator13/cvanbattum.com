@@ -8,7 +8,7 @@ import ContactView from "@/views/ContactView.vue"
 import NotFoundView from "@/views/NotFoundView.vue";
 import {nameFromSlug, projectExists} from "@/model/portfolioModel";
 
-function getPageTitle(targetPage: string) : string {
+function getPageTitle(targetPage: string): string {
     if (!targetPage) {
         return "Casper van Battum"
     }
@@ -84,7 +84,28 @@ const routes: Array<RouteConfig> = [
 const router = new VueRouter({
     mode: 'history',
     base: process.env.BASE_URL,
-    routes
+    routes,
+    scrollBehavior(to, from, savedPosition) {
+        if (savedPosition) {
+            return {
+                x: savedPosition.x,
+                y: savedPosition.y,
+                behavior: "smooth"
+            }
+        } else {
+            if (to.hash) {
+                return {
+                    selector: to.hash,
+                    behavior: "smooth"
+                }
+            }
+            return {
+                x: 0,
+                y: 0,
+                behavior: "smooth"
+            }
+        }
+    },
 })
 
 router.beforeEach((to, from, next) => {
