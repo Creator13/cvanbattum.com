@@ -10,6 +10,11 @@ In order for it to work, we needed to surprise our players with something they d
 ### Running a custom captive portal on a Raspberry Pi
 Raspberry Pis are surprisingly customizable little machines. Leveraging the power of all of Linux, I managed to run a Node.js server that would serve up our Vue webapp and function as a backend game server. Next, I had to configure the Pi to use its WiFi chip to emit a WiFi network instead of connect to one (similar to how a phone creates a WiFi hotspot). Then, using HostAPD, I configured the network to redirect to the locally running Node.js server as a captive portal. It was an incredible experience to create a 'real' access point out of a simple Raspberry Pi.
 
+## Side quests: Rapid prototyping
+In the early stages of the development process, driven by our goal to make an experience to connect people, we wanted to experiment with some social games. One day, we brough a rope to Utrecht Central Station and attempted to get random people to participate in a game of tug-of-war.
+
+In order to test a game of *who is it* between strangers, we needed a set of random questions and answers to quickly test on people. Creating the entire app with network connectivity was more than unfeasible at this point, but picking all the questions by hand and matching them with answers on the fly would have been a hassle too. Instead **I wrote a Python script** ([link](https://github.com/Creator13/ConnectForCoffee/blob/master/playtesting/src/randomnumbers.py)) that would handle the complex part of the game based on just a list of questions and answers. Running on a single computer, it would generate a question that could be copied over to an online chat app (like WhatsApp), so the game master could have two random players communicate with each other without the two players being aware who the other one is.
+
 ## One page design poster
 
 ![One page design poster](/project_content/connect-for-coffee/onePageDesign.png)
