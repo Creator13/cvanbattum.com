@@ -20,7 +20,7 @@ const projects: Project[] = [
         "splash": "project_content/mapsnap/splash.png",
         "content": "",
         "shortDescription": "A command line tool to create snapshots and timelapses of OpenStreetMap.",
-        "year": 2021,
+        "year": "2021-2022",
         "tags": ["c-sharp", "openstreetmap", "osm", "dotnet", "image-processing", "cli"],
         "techs": ["C#", ".NET 6.0", "OpenStreetMap", "CLI"],
         "isFavorite": true,
@@ -73,6 +73,17 @@ const projects: Project[] = [
         "isFavorite": true,
     },
     {
+        "name": "Portfolio website",
+        "slug": "portfolio",
+        "thumbnailUri": "project_content/portfolio/thumb.jpg",
+        "splash": "project_content/portfolio/splash.jpg",
+        "content": "",
+        "shortDescription": "The tech behind this website.",
+        "year": "2021-2022 (ongoing)",
+        "tags": ["web", "typescript", "node-js", "vue"],
+        "techs": ["Typescript", "Vue", "Node.js", "Markdown"]
+    },
+    {
         "name": "Procedural tree generator",
         "slug": "tree-generator",
         "thumbnailUri": "project_content/tree-gen/thumb.png",
@@ -89,7 +100,7 @@ const projects: Project[] = [
         "thumbnailUri": "project_content/journalist/webapp.jpg",
         "splash": "project_content/journalist/splash.png",
         "content": "",
-        "shortDescription": "Custom-built chest that opens with a unique, digital code.",
+        "shortDescription": "Classroom web app to help teach students about ethics in journalism.",
         "year": "2020-2021",
         "tags": ["web", "typescript", "node-js", "database", "full-stack"],
         "techs": ["Webapp", "Vue", "Node.js", "MongoDB"]
