@@ -84,6 +84,17 @@ const projects: Project[] = [
         "techs": ["Typescript", "Vue", "Node.js", "Markdown"]
     },
     {
+        "name": "AI heightmap generator",
+        "slug": "heightmap-gen",
+        "thumbnailUri": "project_content/heightmap-gen/imgen4.jpg",
+        "splash": "project_content/heightmap-gen/heightmap-unity.jpg",
+        "content": "",
+        "shortDescription": "Adapting a neural network to generate heightmaps.",
+        "year": "2022",
+        "tags": ["ai", "dcgan", "python"],
+        "techs": ["AI", "Python", "PyTorch"]
+    },
+    {
         "name": "Procedural tree generator",
         "slug": "tree-generator",
         "thumbnailUri": "project_content/tree-gen/thumb.png",
