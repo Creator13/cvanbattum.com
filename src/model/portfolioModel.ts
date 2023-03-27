@@ -15,6 +15,7 @@ import theJournalist from "@/assets/the-journalist.md";
 import mapsnap from "@/assets/mapsnap.md";
 import portfolio from "@/assets/portfolio.md"
 import heightmap from "@/assets/heightmap-gen.md"
+import lunarLander from "@/assets/lunar-lander.md"
 // import example from "!raw-loader!@/assets/example.md";
 // import simfluencer from "!raw-loader!@/assets/simfluencer.md";
 
@@ -32,7 +33,8 @@ const markdown: {[id: string]: string} = {
     "the-journalist": theJournalist,
     "mapsnap": mapsnap,
     "portfolio": portfolio,
-    "heightmap-gen": heightmap
+    "heightmap-gen": heightmap,
+    "lunar-lander": lunarLander
 }
 
 export function loadProject(slug: string): Project {

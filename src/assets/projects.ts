@@ -49,16 +49,27 @@ const projects: Project[] = [
         "techs": ["Node.js", "Websockets", "Raspberry Pi", "WiFi"],
         "isFavorite": true,
     },
+    // {
+    //     "name": "Game of Life",
+    //     "slug": "game-of-life",
+    //     "thumbnailUri": "project_content/gol/thumb.png",
+    //     "splash": "project_content/gol/splash.png",
+    //     "content": "",
+    //     "shortDescription": "Windows console version of the game of life in C++.",
+    //     "year": 2019,
+    //     "tags": ["c++", "hku"],
+    //     "techs": ["C++"]
+    // },
     {
-        "name": "Game of Life",
-        "slug": "game-of-life",
-        "thumbnailUri": "project_content/gol/thumb.png",
-        "splash": "project_content/gol/splash.png",
+        "name": "Lunar Lander",
+        "slug": "lunar-lander",
+        "thumbnailUri": "project_content/lunar-lander/thumb.png",
+        "splash": "project_content/lunar-lander/thumb.png",
         "content": "",
-        "shortDescription": "Windows console version of the game of life in C++.",
-        "year": 2019,
-        "tags": ["c++", "hku"],
-        "techs": ["C++"]
+        "shortDescription": "OpenGL clone of the classic arcade game",
+        "year": 2023,
+        "tags": ["c++", "opengl"],
+        "techs": ["C++", "OpenGL", "SDL2"]
     },
     {
         "name": "Digital Treasure Chest",
