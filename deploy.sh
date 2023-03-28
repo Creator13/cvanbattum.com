@@ -5,7 +5,7 @@ set -e
 cd dist
 
 # if you are deploying to a custom domain
- echo 'cvanbattum.com' > CNAME
+echo 'cvanbattum.com' > CNAME
 
 git init
 git checkout -b main
