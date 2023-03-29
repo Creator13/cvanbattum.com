@@ -5,7 +5,12 @@
       <div class="card-overlay">
         <img class="card-img" :src="projectObject.thumbnailUri" :alt="projectObject.slug"/></div>
       <div class="card-text fadeIn-bottom">
-        <h3>{{ projectObject.name }}</h3>
+        <h3>{{ projectObject.name }} ({{ projectObject.year }})</h3>
+        <h6><span>
+            <template v-for="(tech, index) in projectObject.techs">
+              {{ tech }}<template v-if="index < projectObject.techs.length - 1"> &bullet; </template>
+            </template>
+          </span></h6>
         <p v-if="projectObject.shortDescription">{{ projectObject.shortDescription }}</p>
       </div>
     </router-link>
@@ -110,17 +115,26 @@ a {
   opacity: 1;
 }
 
-.card-text h3 {
-  font-family: "Adelle", sans-serif;
-  font-size: 1.3em;
-  font-weight: 700;
-  letter-spacing: 0.15em;
-  margin-bottom: 0.5em;
-  text-transform: uppercase;
-}
+.card-text {
+  h3 {
+    font-family: "Adelle", sans-serif;
+    font-size: 1.3em;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.2em;
+    text-transform: uppercase;
+  }
 
-.card-text p {
-  line-height: 1.5em;
+  h6 {
+    margin: 0;
+    font-family: "Adelle", sans-serif;
+    font-weight: 300;
+    font-size: .85em;
+  }
+
+  p {
+    line-height: 1.5em;
+  }
 }
 
 .fadeIn-bottom {

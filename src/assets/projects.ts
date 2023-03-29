@@ -20,7 +20,7 @@ const projects: Project[] = [
         "splash": "project_content/mapsnap/splash.png",
         "content": "",
         "shortDescription": "A command line tool to create snapshots and timelapses of OpenStreetMap.",
-        "year": "2021-2022",
+        "year": "2021-",
         "tags": ["c-sharp", "openstreetmap", "osm", "dotnet", "image-processing", "cli"],
         "techs": ["C#", ".NET 6.0", "OpenStreetMap", "CLI"],
         "isFavorite": true,
@@ -90,7 +90,7 @@ const projects: Project[] = [
         "splash": "project_content/portfolio/splash.jpg",
         "content": "",
         "shortDescription": "The tech behind this website.",
-        "year": "2021-2022 (ongoing)",
+        "year": "2021-",
         "tags": ["web", "typescript", "node-js", "vue"],
         "techs": ["Typescript", "Vue", "Node.js", "Markdown"]
     },
