@@ -24,8 +24,7 @@
       </transition>
     </div>
     <footer>
-      © Casper van Battum 2023 &#x2022; <a href="https://github.com/Creator13/cvanbattum.com" target="_blank">View
-      website source code</a>
+      © Casper van Battum 2024 &#x2022; <a href="https://github.com/Creator13/cvanbattum.com" target="_blank">View website source code</a>
     </footer>
     <!--    <div class="splash-image">-->
     <!--      <div class="splash-text">-->

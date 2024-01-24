@@ -14,6 +14,18 @@ const projects: Project[] = [
         "isFavorite": true,
     },
     {
+        "name": "The Social Grip",
+        "slug": "social-grip",
+        "thumbnailUri": "project_content/social-grip/thumb.png",
+        "splash": "project_content/social-grip/splash.jpg",
+        "content": "",
+        "shortDescription": "Challenging grid-based stealth game.",
+        "year": 2023,
+        "tags": [],
+        "techs": ["Unity 2022.2", "C#", "Grid-based", "Pathfinding"],
+        "isFavorite": true,
+    },
+    {
         "name": "Mapsnap",
         "slug": "mapsnap",
         "thumbnailUri": "project_content/mapsnap/thumb.gif",

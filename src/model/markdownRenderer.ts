@@ -18,7 +18,7 @@ md.renderer.rules.link_open = function (tokens, idx, options, env, self) {
     const aIndex = tokens[idx].attrIndex('target');
 
     if (aIndex < 0) {
-        tokens[idx].attrPush(['target', 'external-cvanbattum.com']); // add new attribute
+        tokens[idx].attrPush(['target', '_blank']); // add new attribute
     }
 
     // pass token to default renderer.

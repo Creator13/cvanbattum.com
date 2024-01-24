@@ -16,6 +16,7 @@ import mapsnap from "@/assets/mapsnap.md";
 import portfolio from "@/assets/portfolio.md"
 import heightmap from "@/assets/heightmap-gen.md"
 import lunarLander from "@/assets/lunar-lander.md"
+import socialGrip from "@/assets/social-grip.md"
 // import example from "!raw-loader!@/assets/example.md";
 // import simfluencer from "!raw-loader!@/assets/simfluencer.md";
 
@@ -34,7 +35,8 @@ const markdown: {[id: string]: string} = {
     "mapsnap": mapsnap,
     "portfolio": portfolio,
     "heightmap-gen": heightmap,
-    "lunar-lander": lunarLander
+    "lunar-lander": lunarLander,
+    "social-grip": socialGrip,
 }
 
 export function loadProject(slug: string): Project {
