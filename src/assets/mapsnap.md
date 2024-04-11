@@ -42,4 +42,4 @@ Command line interfaces can be tricky to write. The parsing that is required can
 ## Interested?
 View the source code, downloads and full usage guide on Github:
 
-[Repository on GitHub](https://github.com/Creator13/mapsnap){.external-link}{.github} {.link-container}
+[Repository on GitHub](https://github.com/Creator13/mapsnap){.external-link}{.github} [Download latest](https://github.com/Creator13/mapsnap/releases/latest){.external-link}{.download} {.link-container}

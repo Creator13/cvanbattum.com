@@ -2,11 +2,11 @@
   <div class="home">
     <main>
       <h2>I'm a Netherlands-based programmer, game developer and photographer.</h2>
-      <div class="markdown">
-        <div class="link-container">
-          <a href="/casper_van_battum_cv_2022.pdf" class="download-link">Download my CV</a>
-        </div>
-      </div>
+<!--      <div class="markdown">-->
+<!--        <div class="link-container">-->
+<!--          <a href="/casper_van_battum_cv_2022.pdf" class="download-link">Download my CV</a>-->
+<!--        </div>-->
+<!--      </div>-->
     </main>
     <div class="splash-image"></div>
   </div>

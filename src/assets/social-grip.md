@@ -44,10 +44,6 @@ By combining a package for [Scene References](https://bitbucket.org/alfish/com.u
 
 ![scenes.png](/project_content/social-grip/scenes.png){.auto-width}
 
-### Visualizations on a time constraint
-
-With such little time available to us, I couldn't spend much time at all to visualize settings and parameters. Some visualizations however were too critical to pass up. A grid is an abstract thing and 
-
 ## The team: **Chonk Cat Productions**
 
 I had the pleasure of working with this lovely team of talented people for the duration of this project:
