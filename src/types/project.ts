@@ -9,4 +9,5 @@ export interface Project {
     tags: string[];
     techs: string[]
     isFavorite?: boolean;
+    hidden?: boolean;
 }

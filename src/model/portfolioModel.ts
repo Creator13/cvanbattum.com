@@ -56,7 +56,7 @@ export function projectExists(slug: string): boolean {
 }
 
 export function loadAllProjects(): Project[] {
-    return projects;
+    return projects.filter(project => !project.hidden);
 }
 
 export function nameFromSlug(slug: string): string {

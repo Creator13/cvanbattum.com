@@ -84,6 +84,18 @@ const projects: Project[] = [
         "techs": ["C++", "OpenGL", "SDL2"]
     },
     {
+        "name": "Graduation",
+        "slug": "graduation",
+        "thumbnailUri": "project_content/graduation/thumb.png",
+        "splash": "project_content/graduation/splash.jpg",
+        "content": "",
+        "shortDescription": "Graduation project at HKU",
+        "year": 2024,
+        "tags": ["c++", "simulation"],
+        "techs": ["Game design", "C++", "ECS"],
+        "hidden": true
+    },
+    {
         "name": "Digital Treasure Chest",
         "slug": "treasure-chest",
         "thumbnailUri": "project_content/treasure-chest/thumb.jpg",
@@ -183,18 +195,6 @@ const projects: Project[] = [
         "tags": ["nodejs", "javascript", "openstreetmap", "cli"],
         "techs": ["Node.js", "OverPass API", "OpenStreetMap"],
     },
-    // {
-    //     // TODO
-    //     "name": "Simfluencer",
-    //     "slug": "simfluencer",
-    //     "thumbnailUri": "project_content/simfluencer/thumb.png",
-    //     "splash": "project_content/treasure-chest/splash.jpg",
-    //     "content": simfluencer,
-    //     "shortDescription": "Game about the impact of spreading fake news.",
-    //     "year": "2020",
-    //     "tags": ["unity", "c#", "hku"],
-    //     "techs": ["Unity", "C#"]
-    // },
 ];
 
 export default projects;
